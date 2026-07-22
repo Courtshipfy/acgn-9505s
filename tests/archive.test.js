@@ -149,7 +149,9 @@ test('手机视口避免误触缩放并保留辅助缩放能力', () => {
 
 test('卡片不提供收藏控件，识别信息在封面外的文档流中', () => {
   const app = readFileSync('src/App.jsx', 'utf8')
+  const styles = readFileSync('src/styles.css', 'utf8')
   assert.doesNotMatch(app, /favorite|收藏/i)
   assert.match(app, /className="card-cover-frame"/)
   assert.match(app, /className="card-identifiers"/)
+  assert.match(styles, /\.cover-image\s*\{[^}]*width:\s*100%;[^}]*height:\s*100%;[^}]*object-fit:\s*fill/s)
 })
