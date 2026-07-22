@@ -46,15 +46,37 @@ jobs:
           chmod 600 ~/.ssh/id_ed25519
           printf '%s\n' '101.33.74.139 ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIA1q2AOZ9sRyjh/Biyzgb/YR5BlOyIvy3JKJl5nggiJn' > ~/.ssh/known_hosts
 
-      - name: Deploy to production
+      - name: Package production site
+        run: tar -C dist -czf site.tar.gz .
+
+      - name: Upload production package
         env:
           VPS_HOST: ${{ secrets.VPS_HOST }}
           VPS_PORT: ${{ secrets.VPS_PORT }}
           VPS_USER: ${{ secrets.VPS_USER }}
         run: |
-          rsync -az --delete --chmod=D2755,F0644 \
-            -e "ssh -p $VPS_PORT -o IdentitiesOnly=yes" \
-            dist/ "$VPS_USER@$VPS_HOST:/var/www/9505.courtship.top/"
+          scp -P "$VPS_PORT" -o IdentitiesOnly=yes \
+            site.tar.gz "$VPS_USER@$VPS_HOST:/home/deploy9505/site.tar.gz"
+
+      - name: Activate production release
+        env:
+          VPS_HOST: ${{ secrets.VPS_HOST }}
+          VPS_PORT: ${{ secrets.VPS_PORT }}
+          VPS_USER: ${{ secrets.VPS_USER }}
+        run: |
+          ssh -p "$VPS_PORT" -o IdentitiesOnly=yes "$VPS_USER@$VPS_HOST" '
+            set -eu
+            target=/var/www/9505.courtship.top
+            archive=/home/deploy9505/site.tar.gz
+            test "$target" = /var/www/9505.courtship.top
+            test -d "$target"
+            test -f "$archive"
+            find "$target" -mindepth 1 -maxdepth 1 -exec rm -rf -- {} +
+            tar -xzf "$archive" -C "$target"
+            find "$target" -type d -exec chmod 2755 {} +
+            find "$target" -type f -exec chmod 0644 {} +
+            rm -f "$archive"
+          '
 
       - name: Remove deployment key
         if: always()
