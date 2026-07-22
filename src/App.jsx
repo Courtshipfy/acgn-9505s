@@ -210,7 +210,18 @@ function Archive({ onSelect, favorites, onFavorite }) {
   const [favoritesOnly, setFavoritesOnly] = useState(false)
   const [query, setQuery] = useState('')
   const [sort, setSort] = useState('year-asc')
-  const [viewMode, setViewMode] = useState('grid')
+  const [viewMode, setViewMode] = useState(() => {
+    if (typeof window === 'undefined' || typeof window.matchMedia !== 'function') return 'grid'
+    return window.matchMedia('(max-width: 620px)').matches ? 'list' : 'grid'
+  })
+
+  useEffect(() => {
+    if (typeof window.matchMedia !== 'function') return undefined
+    const compactViewport = window.matchMedia('(max-width: 620px)')
+    const syncViewMode = event => setViewMode(event.matches ? 'list' : 'grid')
+    compactViewport.addEventListener('change', syncViewMode)
+    return () => compactViewport.removeEventListener('change', syncViewMode)
+  }, [])
 
   const filtered = useMemo(() => {
     return filterArchive(archiveItems, {
