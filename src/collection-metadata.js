@@ -11,7 +11,7 @@ const textLicense = {
 const rightsNotice = '非自由素材，仅用于作品识别与资料说明；版权归原权利人，不授予转载或再利用权。'
 
 const importedMetadata = Object.fromEntries(collection.map(item => [item.code, {
-  note: item.note,
+  ...(item.note ? { note: item.note } : {}),
   source: {
     ...textLicense,
     qid: item.qid,
@@ -21,7 +21,20 @@ const importedMetadata = Object.fromEntries(collection.map(item => [item.code, {
     revisionId: item.revisionId,
     revisionTimestamp: item.revisionTimestamp,
   },
-  cover: {
+  cover: item.assetType === 'title-card' ? {
+    status: 'approved',
+    statusLabel: '原创馆藏题签',
+    sourcePage: item.sourcePage,
+    originalUrl: item.originalUrl,
+    localSrc: item.localSrc,
+    assetType: item.assetType,
+    verifiedAt: '2026-07-22',
+    author: 'THE 9505s Archive',
+    license: 'CC0 1.0',
+    licenseUrl: 'https://creativecommons.org/publicdomain/zero/1.0/',
+    attributionRequired: false,
+    modified: false,
+  } : {
     status: 'referenced',
     statusLabel: item.assetType === 'logo' ? '资料性引用标志' : '资料性引用封面',
     sourcePage: item.sourcePage,

@@ -6,9 +6,9 @@ import { createEntryHash, filterArchive, getRegions, getRelatedSignals, parseEnt
 import { pilotMetadata } from '../src/pilot-metadata.js'
 import { collectionMetadata } from '../src/collection-metadata.js'
 
-test('馆藏完整覆盖 1995—2005 与四个频道', () => {
+test('馆藏完整覆盖 1995—2005 与五个频道', () => {
   for (let year = 1995; year <= 2005; year += 1) {
-    for (const type of ['音乐', '动漫', '漫画', '游戏']) {
+    for (const type of ['音乐', '动漫', '漫画', '游戏', '小说']) {
       assert.ok(archiveItems.some(item => item.year === year && item.type === type), `${year} 缺少 ${type}`)
     }
   }
@@ -84,7 +84,7 @@ test('全部馆藏的 Wikimedia 简介和许可记录满足发布门槛', () => 
 
 test('自由授权封面与资料性引用素材采用不同发布规则', () => {
   const approved = archiveItems.filter(item => item.cover?.status === 'approved')
-  assert.equal(approved.length, 1)
+  assert.ok(approved.length >= 1)
   for (const item of approved) {
     assert.ok(item.cover.author)
     assert.ok(item.cover.license)
@@ -106,7 +106,7 @@ test('自由授权封面与资料性引用素材采用不同发布规则', () =>
 
 test('完整 Wikimedia 快照覆盖所有新增馆藏且本地文件存在', () => {
   const snapshot = JSON.parse(readFileSync('content/imports/wikimedia-collection-raw.json', 'utf8').replace(/^\uFEFF/, ''))
-  assert.equal(snapshot.length, 54)
+  assert.equal(snapshot.length, 87)
   assert.equal(new Set(snapshot.map(item => item.code)).size, snapshot.length)
   assert.equal(new Set(snapshot.map(item => item.qid)).size, snapshot.length)
   for (const item of snapshot) {
