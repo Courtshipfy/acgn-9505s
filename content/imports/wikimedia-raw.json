@@ -1,0 +1,117 @@
+{
+  "schemaVersion": 1,
+  "fetchedAt": "2026-07-22",
+  "sourceProject": "zh.wikipedia.org",
+  "textLicense": {
+    "name": "CC BY-SA 4.0",
+    "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "termsUrl": "https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use/en#7._Licensing_of_Content"
+  },
+  "publicationStatus": "raw-local-snapshot-not-for-direct-publication",
+  "items": [
+    {
+      "code": "M-0001",
+      "qid": "Q220726",
+      "resolvedTitle": "一號複製人",
+      "description": null,
+      "extract": "《一號複製人》 是英國另類搖滾樂團電台司令的第四張錄音室專輯。專輯於2000年10月發行，旋即橫掃全球，發行首週便在英國獲得白金唱片。雖然沒有發行官方單曲或拍攝音樂錄影帶進行宣傳，《一號複製人》仍成為電台司令首張空降美國冠軍的專輯作品。\n",
+      "wikipediaUrl": "https://zh.wikipedia.org/wiki/%E4%B8%80%E8%99%9F%E8%A4%87%E8%A3%BD%E4%BA%BA",
+      "revisionId": 88099467,
+      "revisionTimestamp": "2025-07-05T02:25:49Z",
+      "fetchedAt": "2026-07-22",
+      "apiUrl": "https://zh.wikipedia.org/api/rest_v1/page/summary/Kid%20A",
+      "textLicense": "CC BY-SA 4.0"
+    },
+    {
+      "code": "M-0002",
+      "qid": "Q221115",
+      "resolvedTitle": "杰倫 (專輯)",
+      "description": "臺湾男歌手周杰倫的第一張個人專輯",
+      "extract": "《杰倫》 是台灣歌手周杰倫首張錄音室專輯，由台湾博德曼音樂於2000年11月7日发行。该专辑获得第12屆台灣金曲獎最佳流行音樂演唱專輯獎與2001年IFPI香港唱片銷量大獎十大銷量國語唱片獎。歌曲《可爱女人》於Hit FM聯播網2000年度百首單曲位列74名。\n",
+      "wikipediaUrl": "https://zh.wikipedia.org/wiki/%E6%9D%B0%E5%80%AB_(%E5%B0%88%E8%BC%AF)",
+      "revisionId": 92029836,
+      "revisionTimestamp": "2026-03-25T00:28:59Z",
+      "fetchedAt": "2026-07-22",
+      "apiUrl": "https://zh.wikipedia.org/api/rest_v1/page/summary/%E6%9D%B0%E5%80%AB_(%E5%B0%88%E8%BC%AF)",
+      "textLicense": "CC BY-SA 4.0"
+    },
+    {
+      "code": "A-9501",
+      "qid": "Q662",
+      "resolvedTitle": "新世纪福音战士",
+      "description": "日本科幻電視動畫",
+      "extract": "《新世纪福音战士》 是一部由庵野秀明执导，GAINAX和龙之子制作公司制作的日本电视动画，于1995年10月至1996年3月在东京电视台首播。\n",
+      "wikipediaUrl": "https://zh.wikipedia.org/wiki/%E6%96%B0%E4%B8%96%E7%BA%AA%E7%A6%8F%E9%9F%B3%E6%88%98%E5%A3%AB",
+      "revisionId": 93208542,
+      "revisionTimestamp": "2026-06-26T07:07:03Z",
+      "fetchedAt": "2026-07-22",
+      "apiUrl": "https://zh.wikipedia.org/api/rest_v1/page/summary/%E6%96%B0%E4%B8%96%E7%BA%AA%E7%A6%8F%E9%9F%B3%E6%88%98%E5%A3%AB",
+      "textLicense": "CC BY-SA 4.0"
+    },
+    {
+      "code": "A-0101",
+      "qid": "Q155653",
+      "resolvedTitle": "千与千寻",
+      "description": "2001年日本動畫電影",
+      "extract": "《神隱少女》 是一部由吉卜力工作室製作、宫崎骏擔任導演和劇本，於2001年7月20日上映的日本動畫電影。其配音演員包括柊瑠美、入野自由、夏木麻里、中村彰男、玉井夕海、神木隆之介、内藤剛志和澤口靖子等人，內容講述一個10歲的小女孩荻野千尋與其家人誤闖了神靈世界，之後經歷成長，並不斷尋找方法來令自己和父母返回人類世界的故事。\n",
+      "wikipediaUrl": "https://zh.wikipedia.org/wiki/%E5%8D%83%E4%B8%8E%E5%8D%83%E5%AF%BB",
+      "revisionId": 93270653,
+      "revisionTimestamp": "2026-07-01T07:10:15Z",
+      "fetchedAt": "2026-07-22",
+      "apiUrl": "https://zh.wikipedia.org/api/rest_v1/page/summary/%E5%8D%83%E4%B8%8E%E5%8D%83%E5%AF%BB",
+      "textLicense": "CC BY-SA 4.0"
+    },
+    {
+      "code": "C-9701",
+      "qid": "Q28667972",
+      "resolvedTitle": "ONE PIECE",
+      "description": "日本漫畫",
+      "extract": "《ONE PIECE》，是日本漫畫家尾田榮一郎創作的少年漫畫，自1997年7月22日起在集英社旗下雜誌《週刊少年Jump》連載、同年12月發行第一冊單行本，至今已出版113冊單行本。並在漫畫雜誌《週刊少年Jump》中長期佔據人氣榜的第一名，單行本在日本以外，亦已有30多個國家翻譯版本發行。另外也衍生出諸多衍生作品，包括同名的電視動畫、電影、小說和電子遊戲等周邊媒體產品。\n",
+      "wikipediaUrl": "https://zh.wikipedia.org/wiki/ONE_PIECE",
+      "revisionId": 93445571,
+      "revisionTimestamp": "2026-07-13T11:15:31Z",
+      "fetchedAt": "2026-07-22",
+      "apiUrl": "https://zh.wikipedia.org/api/rest_v1/page/summary/ONE%20PIECE",
+      "textLicense": "CC BY-SA 4.0"
+    },
+    {
+      "code": "C-0002",
+      "qid": "Q756604",
+      "resolvedTitle": "波斯波利斯 (漫畫)",
+      "description": null,
+      "extract": "《波斯波利斯》，又译《我在伊朗长大》，是一本由伊朗裔法国图像小说作家、漫画家瑪嘉·莎塔碧创作的自传体图像小说，故事描述了作者在經歷伊斯兰革命下在故鄉伊朗的成长过程。标题是源自古波斯帝国中的首都波斯波利斯。本书在《新闻周刊》2000-2009年度十本最佳非小说书籍中排名第5。最初的发布语言是法语，现在已经翻译成多种语文。《茉莉人生》是一部由这本漫画改编的动画电影，在2007年上映，并获提名奥斯卡最佳动画片奖。\n",
+      "wikipediaUrl": "https://zh.wikipedia.org/wiki/%E6%B3%A2%E6%96%AF%E6%B3%A2%E5%88%A9%E6%96%AF_(%E6%BC%AB%E7%95%AB)",
+      "revisionId": 92993224,
+      "revisionTimestamp": "2026-06-08T13:05:09Z",
+      "fetchedAt": "2026-07-22",
+      "apiUrl": "https://zh.wikipedia.org/api/rest_v1/page/summary/%E6%B3%A2%E6%96%AF%E6%B3%A2%E5%88%A9%E6%96%AF_(%E6%BC%AB%E7%95%AB)",
+      "textLicense": "CC BY-SA 4.0"
+    },
+    {
+      "code": "G-9601",
+      "qid": "Q637137",
+      "resolvedTitle": "寶可夢 紅／綠",
+      "description": "電子遊戲",
+      "extract": "《寶可夢 紅／綠》 是由GAME FREAK開發、任天堂發行的Game Boy角色扮演遊戲，是《寶可夢》系列的開山之作。遊戲在1996年2月27日於日本發售，同年10月15日發售其特別版《寶可夢 藍》。在接下來的三年內於北美、歐洲、澳洲發行了海外版《寶可夢 紅／藍》。1998年時推出特別版《寶可夢 皮卡丘》。2004年時並推出重製版《寶可夢 火紅／葉綠》。\n",
+      "wikipediaUrl": "https://zh.wikipedia.org/wiki/%E5%AF%B6%E5%8F%AF%E5%A4%A2_%E7%B4%85%EF%BC%8F%E7%B6%A0",
+      "revisionId": 93142733,
+      "revisionTimestamp": "2026-06-20T15:52:34Z",
+      "fetchedAt": "2026-07-22",
+      "apiUrl": "https://zh.wikipedia.org/api/rest_v1/page/summary/%E5%AF%B6%E5%8F%AF%E5%A4%A2_%E7%B4%85%EF%BC%8F%E7%B6%A0",
+      "textLicense": "CC BY-SA 4.0"
+    },
+    {
+      "code": "G-0401",
+      "qid": "Q131007",
+      "resolvedTitle": "魔兽世界",
+      "description": "暴雪娛樂的電子遊戲",
+      "extract": "《魔獸世界》，簡稱魔獸，是由暴雪娛樂製作的一款大型多人在線角色扮演遊戲。魔獸世界的劇情開端點是在《魔獸爭霸3：寒冰霸權》結束之後的故事。\n",
+      "wikipediaUrl": "https://zh.wikipedia.org/wiki/%E9%AD%94%E5%85%BD%E4%B8%96%E7%95%8C",
+      "revisionId": 91984967,
+      "revisionTimestamp": "2026-03-21T16:00:45Z",
+      "fetchedAt": "2026-07-22",
+      "apiUrl": "https://zh.wikipedia.org/api/rest_v1/page/summary/%E9%AD%94%E5%85%BD%E4%B8%96%E7%95%8C",
+      "textLicense": "CC BY-SA 4.0"
+    }
+  ]
+}

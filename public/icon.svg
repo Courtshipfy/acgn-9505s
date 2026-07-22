@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="THE 9505s">
+  <rect width="512" height="512" rx="92" fill="#151412"/>
+  <path d="M-20 382 532 112v78L-20 460Z" fill="#ee4932"/>
+  <path d="M34 34h444v444H34z" fill="none" stroke="#e9e3d7" stroke-width="8" opacity=".38"/>
+  <g fill="#e9e3d7" font-family="Arial,Helvetica,sans-serif" font-size="142" font-weight="900" letter-spacing="-12">
+    <text x="46" y="222">95</text>
+    <text x="253" y="420">05</text>
+  </g>
+  <circle cx="257" cy="256" r="34" fill="#151412" stroke="#e9e3d7" stroke-width="7"/>
+  <circle cx="257" cy="256" r="8" fill="#ee4932"/>
+</svg>

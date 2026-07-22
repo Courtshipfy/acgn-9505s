@@ -1,0 +1,21 @@
+{
+  "name": "THE 9505s — Culture Archive",
+  "short_name": "THE 9505s",
+  "description": "1995—2005 音乐、动漫、漫画与游戏文化档案。",
+  "lang": "zh-CN",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#151412",
+  "theme_color": "#151412",
+  "categories": ["entertainment", "education", "lifestyle"],
+  "icons": [
+    {
+      "src": "./icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
