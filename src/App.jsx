@@ -41,7 +41,7 @@ function Hero({ onExplore, onRandom }) {
       <h1><span>1995</span><i>—</i><span className="outline">2005</span></h1>
       <div className="museum-hero-meta">
         <div><small>COLLECTION</small><strong>{archiveItems.length} 件馆藏</strong></div>
-        <div><small>CATEGORIES</small><strong>原声 / 动漫 / 漫画 / 游戏 / 小说</strong></div>
+        <div><small>CATEGORIES</small><strong>音乐 / 动漫 / 漫画 / 游戏 / 小说</strong></div>
         <div><small>PERIOD</small><strong>1995.01—2005.12</strong></div>
         <div className="museum-hero-actions"><button onClick={onExplore}>查看馆藏 ↓</button><button onClick={onRandom}>随机作品 ↗</button></div>
       </div>
@@ -267,8 +267,8 @@ function Footer() {
     <footer id="about">
       <div className="footer-copy"><p className="eyebrow"><span>THE 9505s ARCHIVE</span></p><h2>1995—2005</h2></div>
       <div className="footer-note">
-        <p>ACGN 原声、动漫、漫画、游戏与小说数字馆藏。当前收录 {archiveItems.length} 件作品，内容持续维护。</p>
-        <span>DIGITAL COLLECTION / SOUNDTRACKS · ANIMATION · COMICS · GAMES · FICTION</span>
+        <p>音乐、动漫、漫画、游戏与小说数字馆藏。当前收录 {archiveItems.length} 件作品，内容持续维护。</p>
+        <span>DIGITAL COLLECTION / MUSIC · ANIMATION · COMICS · GAMES · FICTION</span>
       </div>
       <div className="footer-bottom"><b>95—05</b><span>© 2026 CULTURE ARCHIVE</span><a href="#top">BACK TO TOP ↑</a></div>
     </footer>

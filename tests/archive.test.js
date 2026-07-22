@@ -8,7 +8,7 @@ import { collectionMetadata } from '../src/collection-metadata.js'
 
 test('馆藏完整覆盖 1995—2005 与五个频道', () => {
   for (let year = 1995; year <= 2005; year += 1) {
-    for (const type of ['原声', '动漫', '漫画', '游戏', '小说']) {
+    for (const type of ['音乐', '动漫', '漫画', '游戏', '小说']) {
       assert.ok(archiveItems.some(item => item.year === year && item.type === type), `${year} 缺少 ${type}`)
     }
   }
@@ -16,36 +16,19 @@ test('馆藏完整覆盖 1995—2005 与五个频道', () => {
 })
 
 test('搜索可匹配标题、作者、地区、标签和简介', () => {
-  assert.deepEqual(filterArchive(archiveItems, { query: '梶浦' }).map(item => item.code), ['M-0202'])
+  assert.deepEqual(filterArchive(archiveItems, { query: '周杰伦' }).map(item => item.code), ['M-0002'])
   assert.ok(filterArchive(archiveItems, { query: '赛博朋克' }).some(item => item.code === 'A-0201'))
-  assert.ok(filterArchive(archiveItems, { query: '桌面角色扮演' }).some(item => item.code === 'N-9902'))
+  assert.ok(filterArchive(archiveItems, { query: '马里' }).some(item => item.code === 'M-0202'))
 })
 
 test('年份、频道、地区与关键词筛选可以组合', () => {
   const result = filterArchive(archiveItems, {
     year: 2005,
-    type: '原声',
-    region: '日本',
-    query: 'Colossus',
+    type: '音乐',
+    region: '英国／斯里兰卡',
+    query: 'Arular',
   })
   assert.deepEqual(result.map(item => item.code), ['M-0502'])
-})
-
-test('原声与小说馆藏均保持 ACGN 范围', () => {
-  const soundtrackSignals = ['Anime OST', 'Game OST', 'Media Mix', 'Game Media Mix']
-  for (const item of archiveItems.filter(item => item.type === '原声')) {
-    assert.ok(item.tags.some(tag => soundtrackSignals.includes(tag)), `${item.code} 缺少 ACGN 原声标签`)
-  }
-
-  const novelSignals = [
-    '轻小说', '奇幻', '都市奇幻', '史诗奇幻', '科幻恐怖', '黑暗奇幻',
-    '反乌托邦', '蒸汽朋克', '现代神话', '魔法', 'speculative fiction', '漫画改编', '游戏改编',
-    '漫画与游戏改编', '桌面角色扮演', '时间循环',
-  ]
-  for (const item of archiveItems.filter(item => item.type === '小说')) {
-    const searchable = [item.format, ...item.tags, item.note].join(' ').toLocaleLowerCase()
-    assert.ok(novelSignals.some(signal => searchable.includes(signal)), `${item.code} 缺少 ACGN 小说资格信号`)
-  }
 })
 
 test('排序支持时间正序、倒序与标题顺序', () => {
@@ -53,7 +36,7 @@ test('排序支持时间正序、倒序与标题顺序', () => {
   const descending = filterArchive(archiveItems, { sort: 'year-desc' })
   assert.equal(ascending[0].year, 1995)
   assert.equal(descending[0].year, 2005)
-  assert.equal(filterArchive(archiveItems, { query: '钢之炼金术师', sort: 'title' }).length, 2)
+  assert.equal(filterArchive(archiveItems, { query: 'Radiohead', sort: 'title' }).length, 2)
 })
 
 test('作品深链接可以往返解析并拒绝普通锚点', () => {
@@ -113,8 +96,9 @@ test('自由授权封面与资料性引用素材采用不同发布规则', () =>
 
 test('完整 Wikimedia 快照覆盖所有新增馆藏且本地文件存在', () => {
   const snapshot = JSON.parse(readFileSync('content/imports/wikimedia-collection-raw.json', 'utf8').replace(/^\uFEFF/, ''))
-  assert.equal(snapshot.length, 89)
+  assert.equal(snapshot.length, 87)
   assert.equal(new Set(snapshot.map(item => item.code)).size, snapshot.length)
+  assert.equal(new Set(snapshot.map(item => item.qid)).size, snapshot.length)
   for (const item of snapshot) {
     assert.ok(item.extract?.trim(), `${item.code} 缺少维基原始摘要`)
     assert.ok(item.cover?.localSrc, `${item.code} 缺少封面记录`)

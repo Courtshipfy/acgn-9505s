@@ -80,7 +80,7 @@ const baseArchiveItems = [
   entry(2005, '原声', 'Wander and the Colossus: Roar of the Earth', '大谷幸', '日本', 'M-0502', '#8a927d', 'GAME OST / CD', ['Game OST', '巨像'], '游戏《Shadow of the Colossus》的官方原声以寂静探索和宏大管弦乐形成强烈反差，让每次攀爬巨像都获得悲剧性的仪式感。'),
   entry(2005, '动漫', 'Avatar: The Last Airbender', 'Michael Dante DiMartino / Bryan Konietzko', '美国', 'A-0502', '#5b91ae', 'TV / ANIMATION', ['奇幻', '成长'], '亚洲文化灵感、连续叙事与角色成长推动美国电视动画进入新的长篇阶段。'),
 
-  // 小说馆藏：每年两部，以轻小说、类型文学和 A/C/G 改编关系为主要选择轴线。
+  // 小说馆藏：每年两部，以类型文学、严肃文学与跨区域写作为主要选择轴线。
   entry(1995, '小说', 'Parasite Eve', '濑名秀明', '日本', 'N-9501', '#7b5a64', 'SCIENCE HORROR NOVEL', ['科幻恐怖', '游戏改编'], '线粒体意识觉醒引发人体异变的科学恐怖小说，后来直接衍生 Square 的电子游戏系列，形成从 Novel 通往 Games 的明确改编链。'),
   entry(1995, '小说', 'Northern Lights', 'Philip Pullman', '英国', 'N-9502', '#6f87a8', 'FANTASY NOVEL', ['奇幻', '跨媒体'], '平行世界、守护精灵与神学寓言开启《黑暗物质》三部曲，作品后来进入图像小说、游戏和影像改编链，是类型小说的代表。'),
   entry(1996, '小说', 'Neverwhere', 'Neil Gaiman', '英国', 'N-9601', '#657c67', 'URBAN FANTASY NOVEL', ['都市奇幻', '漫画改编'], '伦敦地下被重写为由门、市场和失落者构成的隐秘世界，小说与电视企划直接关联，后来又改编为漫画，具有清晰跨媒体身份。'),
@@ -132,7 +132,7 @@ export const archiveItems = baseArchiveItems.map(item => {
 
 export const typeMeta = {
   全部: { en: 'ALL SIGNALS', glyph: '✦' },
-  原声: { en: 'ACGN SOUNDTRACKS', glyph: '♫' },
+  音乐: { en: 'MUSIC', glyph: '◉' },
   动漫: { en: 'ANIME', glyph: '△' },
   漫画: { en: 'MANGA', glyph: '▤' },
   游戏: { en: 'GAMES', glyph: '✚' },
