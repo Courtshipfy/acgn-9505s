@@ -37,10 +37,10 @@ npm test
 - 可安装的 PWA 应用清单与原创应用图标
 - 同源资源离线缓存和实时网络状态提示
 - 使用 Node 内置测试框架覆盖筛选、排序、收藏、深链接、推荐与数据完整性
-- 8 件 Wikimedia 试点馆藏，包含 Wikidata QID、维基修订号和人工审核简介
-- 每件试点馆藏均展示文本来源、许可、封面状态与核验日期
-- `Persepolis` 使用许可明确的 Commons 图片；其余 7 件以资料性引用方式展示本地保存的来源素材，并明确标注版权归原权利人、不授予转载或再利用权
-- 试点封面和页面字体均不需要在运行时向第三方网站请求；外部地址仅作为用户主动点击的来源记录
+- 全部 62 件馆藏均包含 Wikidata QID、Wikipedia 修订号和 80—140 字中文馆藏简介
+- 每件馆藏均展示文本来源、许可、封面状态与核验日期
+- `Persepolis` 使用许可明确的 Commons 图片；其余作品以资料性引用方式展示本地保存的识别素材，并明确标注版权归原权利人、不授予转载或再利用权
+- 所有封面和页面字体均不需要在运行时向第三方网站请求；外部地址仅作为用户主动点击的来源记录
 
 ## Wikimedia 内容同步
 
@@ -48,9 +48,9 @@ npm test
 npm run sync:wikimedia
 ```
 
-同步命令只写入未发布的原始快照；网站使用的是 [pilot-metadata.js](./src/pilot-metadata.js) 中经过人工审核的数据。生产环境运行同步前，应通过 `WIKIMEDIA_USER_AGENT` 提供包含真实项目地址或联系方式的 User-Agent。
+同步命令只写入未发布的原始快照；网站使用 [collection-metadata.js](./src/collection-metadata.js) 组合后的审核数据。生产环境运行同步前，应通过 `WIKIMEDIA_USER_AGENT` 提供包含真实项目地址或联系方式的 User-Agent。
 
-完整核验记录见 [wikimedia-pilot.md](./docs/research/wikimedia-pilot.md)。
+完整核验记录见 [wikimedia-full-collection.md](./docs/research/wikimedia-full-collection.md) 与 [wikimedia-pilot.md](./docs/research/wikimedia-pilot.md)。
 - 响应式桌面与移动端布局
 - 融合 CRT 扫描线、早期数字界面、唱片与印刷档案风格的视觉系统
 

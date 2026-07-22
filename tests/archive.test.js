@@ -4,6 +4,7 @@ import test from 'node:test'
 import { archiveItems } from '../src/data.js'
 import { createEntryHash, filterArchive, getRegions, getRelatedSignals, parseEntryHash, toggleFavoriteCode } from '../src/archive.js'
 import { pilotMetadata } from '../src/pilot-metadata.js'
+import { collectionMetadata } from '../src/collection-metadata.js'
 
 test('馆藏完整覆盖 1995—2005 与四个频道', () => {
   for (let year = 1995; year <= 2005; year += 1) {
@@ -67,13 +68,14 @@ test('地区索引覆盖多个文化区域', () => {
   assert.ok(getRegions(archiveItems).length >= 10)
 })
 
-test('Wikimedia 试点简介和许可记录满足发布门槛', () => {
-  const pilot = archiveItems.filter(item => item.source)
-  assert.equal(pilot.length, 8)
-  for (const item of pilot) {
+test('全部馆藏的 Wikimedia 简介和许可记录满足发布门槛', () => {
+  const sourced = archiveItems.filter(item => item.source)
+  assert.equal(sourced.length, archiveItems.length)
+  assert.equal(Object.keys(collectionMetadata).length, archiveItems.length)
+  for (const item of sourced) {
     assert.ok([...item.note].length >= 80 && [...item.note].length <= 140, `${item.code} 简介长度不合格`)
     assert.match(item.source.qid, /^Q\d+$/)
-    assert.ok(item.source.wikipediaUrl.startsWith('https://zh.wikipedia.org/'))
+    assert.match(item.source.wikipediaUrl, /^https:\/\/(zh|en)\.wikipedia\.org\//)
     assert.equal(item.source.textLicense, 'CC BY-SA 4.0')
     assert.ok(item.source.revisionId)
     assert.ok(item.cover?.sourcePage)
@@ -91,14 +93,26 @@ test('自由授权封面与资料性引用素材采用不同发布规则', () =>
     assert.ok(existsSync(`public/${item.cover.localSrc.replace(/^\.\//, '')}`), `${item.code} 缺少本地封面文件`)
   }
   const referenced = archiveItems.filter(item => item.cover?.status === 'referenced')
-  assert.equal(referenced.length, 7)
+  assert.equal(referenced.length, archiveItems.length - approved.length)
   for (const item of referenced) {
     assert.ok(item.cover.localSrc)
     assert.ok(existsSync(`public/${item.cover.localSrc.replace(/^\.\//, '')}`), `${item.code} 缺少本地引用素材`)
-    assert.ok(item.cover.originalUrl.startsWith('https://zh.wikipedia.org/wiki/Special:Redirect/file/'))
-    assert.ok(item.cover.sourcePage.startsWith('https://zh.wikipedia.org/wiki/File:'))
+    assert.match(item.cover.originalUrl, /^https:\/\/(upload\.wikimedia\.org|zh\.wikipedia\.org\/wiki\/Special:Redirect\/file\/)/)
+    assert.match(item.cover.sourcePage, /^https:\/\/(zh|en|commons)\.wikipedia|^https:\/\/commons\.wikimedia/)
     assert.match(item.cover.rightsNotice, /版权归原权利人/)
     assert.ok(['cover', 'logo'].includes(item.cover.assetType))
+  }
+})
+
+test('完整 Wikimedia 快照覆盖所有新增馆藏且本地文件存在', () => {
+  const snapshot = JSON.parse(readFileSync('content/imports/wikimedia-collection-raw.json', 'utf8').replace(/^\uFEFF/, ''))
+  assert.equal(snapshot.length, 54)
+  assert.equal(new Set(snapshot.map(item => item.code)).size, snapshot.length)
+  assert.equal(new Set(snapshot.map(item => item.qid)).size, snapshot.length)
+  for (const item of snapshot) {
+    assert.ok(item.extract?.trim(), `${item.code} 缺少维基原始摘要`)
+    assert.ok(item.cover?.localSrc, `${item.code} 缺少封面记录`)
+    assert.ok(existsSync(`public/${item.cover.localSrc.replace(/^\.\//, '')}`), `${item.code} 缺少本地封面文件`)
   }
 })
 

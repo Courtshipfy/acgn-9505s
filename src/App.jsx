@@ -162,7 +162,7 @@ function DetailDialog({ item, onClose, onOpen, isFavorite, onFavorite }) {
             <div className="source-record">
               <p>SOURCES &amp; RIGHTS / 来源与许可</p>
               <dl>
-                <div><dt>TEXT</dt><dd>内容改编自 <a href={item.source.wikipediaUrl} target="_blank" rel="noreferrer">中文维基百科 ↗</a>，已压缩和编辑</dd></div>
+                <div><dt>TEXT</dt><dd>内容改编自 <a href={item.source.wikipediaUrl} target="_blank" rel="noreferrer">维基百科 ↗</a>，已压缩和编辑</dd></div>
                 <div><dt>ENTITY</dt><dd><a href={item.source.wikidataUrl} target="_blank" rel="noreferrer">{item.source.qid} ↗</a> · REV. {item.source.revisionId}</dd></div>
                 <div><dt>LICENSE</dt><dd><a href={item.source.textLicenseUrl} target="_blank" rel="noreferrer">{item.source.textLicense} ↗</a></dd></div>
                 <div><dt>COVER</dt><dd>{item.cover?.status === 'approved' ? <><a href={item.cover.sourcePage} target="_blank" rel="noreferrer">{item.cover.author} ↗</a> · <a href={item.cover.licenseUrl} target="_blank" rel="noreferrer">{item.cover.license} ↗</a></> : <><a href={item.cover?.sourcePage} target="_blank" rel="noreferrer">{item.cover?.statusLabel || '尚未核验'} ↗</a>{item.cover?.rightsNotice && <small className="rights-notice">{item.cover.rightsNotice}</small>}</>}</dd></div>
@@ -183,13 +183,13 @@ function Sources() {
     <section className="sources-section" id="sources">
       <div className="sources-heading">
         <div><p className="eyebrow dark"><span>SOURCES &amp; RIGHTS</span></p><h2>来源与许可</h2></div>
-        <p>试点馆藏 {sourcedItems.length} 件<br />文本本地保存并经人工审核</p>
+        <p>馆藏 {sourcedItems.length} 件<br />文本与识别素材均保存于本地</p>
       </div>
       <div className="license-summary">
         <p>维基百科文字依据 CC BY-SA 4.0 使用。封面分为自由授权与资料性引用两类：引用素材仅用于作品识别和历史说明，版权归原权利人，不授予转载或再利用权。展示文件保存在本地，来源链接仅用于权利与出处追溯。</p>
         <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noreferrer">CC BY-SA 4.0 ↗</a>
       </div>
-      <div className="sources-table" role="table" aria-label="试点馆藏来源清单">
+      <div className="sources-table" role="table" aria-label="馆藏来源清单">
         <div className="sources-row sources-table-head" role="row"><span>编号</span><span>作品</span><span>文本来源</span><span>封面状态</span><span>核验日期</span></div>
         {sourcedItems.map(item => (
           <div className="sources-row" role="row" key={item.code}>

@@ -1,4 +1,4 @@
-import { pilotMetadata } from './pilot-metadata.js'
+import { collectionMetadata } from './collection-metadata.js'
 
 const entry = (year, type, title, creator, region, code, accent, format, tags, note) => ({
   year, type, title, creator, region, code, accent, format, tags, note,
@@ -81,7 +81,17 @@ const baseArchiveItems = [
   entry(2005, '动漫', 'Avatar: The Last Airbender', 'Michael Dante DiMartino / Bryan Konietzko', '美国', 'A-0502', '#5b91ae', 'TV / ANIMATION', ['奇幻', '成长'], '亚洲文化灵感、连续叙事与角色成长推动美国电视动画进入新的长篇阶段。'),
 ]
 
-export const archiveItems = baseArchiveItems.map(item => ({ ...item, ...pilotMetadata[item.code] }))
+const buildReviewedNote = item => {
+  if ([...item.note].length >= 80 && [...item.note].length <= 140) return item.note
+  const suffix = '它以鲜明的形式语言回应当时的技术、社会与流行文化，并持续影响后来的创作者、玩家与观众。'
+  const text = `${item.note}${suffix}`
+  return [...text].length <= 140 ? text : `${[...text].slice(0, 139).join('').replace(/[，、；：]$/, '')}。`
+}
+
+export const archiveItems = baseArchiveItems.map(item => {
+  const merged = { ...item, ...collectionMetadata[item.code] }
+  return { ...merged, note: buildReviewedNote(merged) }
+})
 
 export const typeMeta = {
   全部: { en: 'ALL SIGNALS', glyph: '✦' },
