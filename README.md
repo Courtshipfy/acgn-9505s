@@ -1,6 +1,6 @@
 # THE 9505s
 
-一个收录 1995—2005 年音乐、动漫、漫画、游戏与小说文化的互动档案网站。
+一个收录 1995—2005 年 ACGN 原声、动漫、漫画、游戏与小说文化的互动档案网站。
 
 ## 本地运行
 
@@ -24,8 +24,9 @@ npm test
 ## 当前版本
 
 - 1995—2005 年份时间轴筛选
-- 音乐、动漫、漫画、游戏、小说五类频道筛选
-- 95 条代表性文化档案，完整覆盖 1995—2005 每一年与五个频道；小说频道每年收录 2 部
+- 原声、动漫、漫画、游戏、小说五类频道筛选
+- 95 条代表性 ACGN 文化档案，完整覆盖 1995—2005 每一年与五个频道；小说频道每年收录 2 部
+- 原声频道仅收录官方动画原声、游戏原声或与 ACGN 作品直接绑定的跨媒体音乐
 - 26 种地区标记，包含华语、非洲、韩国、欧美、日本、拉美、南亚与西亚文化样本
 - 支持作品、作者、地区、媒介与标签搜索
 - 支持年份、频道、地区筛选和多种排序方式
@@ -50,7 +51,7 @@ npm run sync:wikimedia
 npm run expand:wikimedia
 ```
 
-`sync:wikimedia` 刷新原有试点快照；`expand:wikimedia` 可重新核验本轮 33 件扩充馆藏并更新本地识别素材。网站使用 [collection-metadata.js](./src/collection-metadata.js) 组合后的审核数据。生产环境运行同步前，应通过 `WIKIMEDIA_USER_AGENT` 提供包含真实项目地址或联系方式的 User-Agent。
+`sync:wikimedia` 刷新原有试点快照；`expand:wikimedia` 可重新核验本轮 39 件 ACGN 范围刷新馆藏并更新本地识别素材。网站使用 [collection-metadata.js](./src/collection-metadata.js) 组合后的审核数据。生产环境运行同步前，应通过 `WIKIMEDIA_USER_AGENT` 提供包含真实项目地址或联系方式的 User-Agent。
 
 完整核验记录见 [wikimedia-full-collection.md](./docs/research/wikimedia-full-collection.md) 与 [wikimedia-pilot.md](./docs/research/wikimedia-pilot.md)。
 

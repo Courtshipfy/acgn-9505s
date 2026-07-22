@@ -47,4 +47,4 @@ const importedMetadata = Object.fromEntries(collection.map(item => [item.code, {
   },
 }]))
 
-export const collectionMetadata = { ...importedMetadata, ...pilotMetadata }
+export const collectionMetadata = { ...pilotMetadata, ...importedMetadata }
