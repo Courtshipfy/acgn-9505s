@@ -2,7 +2,7 @@ import assert from 'node:assert/strict'
 import { existsSync, readFileSync } from 'node:fs'
 import test from 'node:test'
 import { archiveItems } from '../src/data.js'
-import { createEntryHash, filterArchive, getRegions, getRelatedSignals, parseEntryHash, toggleFavoriteCode } from '../src/archive.js'
+import { createEntryHash, filterArchive, getRegions, getRelatedSignals, parseEntryHash } from '../src/archive.js'
 import { pilotMetadata } from '../src/pilot-metadata.js'
 import { collectionMetadata } from '../src/collection-metadata.js'
 
@@ -21,13 +21,12 @@ test('搜索可匹配标题、作者、地区、标签和简介', () => {
   assert.ok(filterArchive(archiveItems, { query: '马里' }).some(item => item.code === 'M-0202'))
 })
 
-test('年份、频道、地区与收藏筛选可以组合', () => {
+test('年份、频道、地区与关键词筛选可以组合', () => {
   const result = filterArchive(archiveItems, {
     year: 2005,
     type: '音乐',
     region: '英国／斯里兰卡',
-    favorites: ['M-0502'],
-    favoritesOnly: true,
+    query: 'Arular',
   })
   assert.deepEqual(result.map(item => item.code), ['M-0502'])
 })
@@ -38,15 +37,6 @@ test('排序支持时间正序、倒序与标题顺序', () => {
   assert.equal(ascending[0].year, 1995)
   assert.equal(descending[0].year, 2005)
   assert.equal(filterArchive(archiveItems, { query: 'Radiohead', sort: 'title' }).length, 2)
-})
-
-test('收藏切换不会修改原数组', () => {
-  const original = ['M-9501']
-  const added = toggleFavoriteCode(original, 'A-9501')
-  const removed = toggleFavoriteCode(added, 'M-9501')
-  assert.deepEqual(original, ['M-9501'])
-  assert.deepEqual(added, ['M-9501', 'A-9501'])
-  assert.deepEqual(removed, ['A-9501'])
 })
 
 test('作品深链接可以往返解析并拒绝普通锚点', () => {
@@ -155,4 +145,11 @@ test('手机视口避免误触缩放并保留辅助缩放能力', () => {
   assert.doesNotMatch(html, /user-scalable=no|maximum-scale=1/)
   assert.match(styles, /touch-action:\s*manipulation/)
   assert.match(styles, /\.archive-tools input,\s*\.archive-tools select\s*\{[^}]*font-size:\s*16px/s)
+})
+
+test('卡片不提供收藏控件，识别信息在封面外的文档流中', () => {
+  const app = readFileSync('src/App.jsx', 'utf8')
+  assert.doesNotMatch(app, /favorite|收藏/i)
+  assert.match(app, /className="card-cover-frame"/)
+  assert.match(app, /className="card-identifiers"/)
 })

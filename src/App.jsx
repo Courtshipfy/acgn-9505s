@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { archiveItems, typeMeta } from './data.js'
-import { createEntryHash, filterArchive, getRegions, getRelatedSignals, parseEntryHash, toggleFavoriteCode } from './archive.js'
+import { createEntryHash, filterArchive, getRegions, getRelatedSignals, parseEntryHash } from './archive.js'
 
 const years = Array.from({ length: 11 }, (_, index) => 1995 + index)
 const regions = getRegions(archiveItems)
@@ -61,21 +61,21 @@ function CategoryTabs({ active, setActive }) {
   )
 }
 
-function ArchiveCard({ item, index, onOpen, isFavorite, onFavorite }) {
+function ArchiveCard({ item, index, onOpen }) {
   const coverSrc = getCoverSrc(item)
   return (
     <article className="archive-card" role="listitem" style={{ '--accent': item.accent, '--delay': `${Math.min(index, 11) * 40}ms` }}>
-      <button className={`favorite-button ${isFavorite ? 'saved' : ''}`} onClick={() => onFavorite(item.code)} aria-label={`${isFavorite ? '取消收藏' : '收藏'} ${item.title}`}>{isFavorite ? '★' : '☆'}</button>
       <button className="card-open" onClick={() => onOpen(item)} aria-label={`查看 ${item.title} 详情`}>
         <div className="card-visual">
-          <span className="card-year">{item.year}</span><span className="card-type">{item.type}</span>
-          {coverSrc
-            ? <img className={`cover-image ${item.cover.status === 'referenced' ? 'referenced-cover' : ''}`} src={coverSrc} alt="" referrerPolicy="no-referrer" />
-            : <div className="cover-art" aria-hidden="true"><span>{item.code.slice(0, 1)}</span><i /><i /><i /></div>}
-          {item.cover?.status === 'referenced' && <span className="reference-badge">引用</span>}
-          <span className="card-code">CAT. {item.code}</span>
+          <div className="card-visual-meta"><span className="card-year">{item.year}</span><span className="card-type">{item.type}</span></div>
+          <div className="card-cover-frame">
+            {coverSrc
+              ? <img className={`cover-image ${item.cover.status === 'referenced' ? 'referenced-cover' : ''}`} src={coverSrc} alt="" referrerPolicy="no-referrer" />
+              : <div className="cover-art" aria-hidden="true"><span>{item.code.slice(0, 1)}</span><i /><i /><i /></div>}
+          </div>
         </div>
         <div className="card-body">
+          <div className="card-identifiers"><span>CAT. {item.code}</span>{item.cover?.status === 'referenced' && <span>资料性引用</span>}</div>
           <p>{item.year} / {item.type} / {item.region}</p><h3>{item.title}</h3>
           <div className="card-note"><span>{item.creator}</span><em className="card-format">{item.format}</em><b>↗</b></div>
         </div>
@@ -84,7 +84,7 @@ function ArchiveCard({ item, index, onOpen, isFavorite, onFavorite }) {
   )
 }
 
-function DetailDialog({ item, onClose, onOpen, isFavorite, onFavorite }) {
+function DetailDialog({ item, onClose, onOpen }) {
   const [copyStatus, setCopyStatus] = useState('COPY LINK / 复制链接')
   const dialogRef = useRef(null)
   const closeButtonRef = useRef(null)
@@ -151,7 +151,6 @@ function DetailDialog({ item, onClose, onOpen, isFavorite, onFavorite }) {
           </dl>
           <div className="detail-tags">{item.tags.map(tag => <span key={tag}>#{tag}</span>)}</div>
           <div className="detail-actions">
-            <button className={`detail-favorite ${isFavorite ? 'saved' : ''}`} onClick={() => onFavorite(item.code)}>{isFavorite ? '★ 已收藏 / SAVED' : '☆ 加入收藏 / SAVE'}</button>
             <button className="copy-link" onClick={copyLink}>{copyStatus}</button>
           </div>
           <div className="related-signals">
@@ -203,11 +202,10 @@ function Sources() {
   )
 }
 
-function Archive({ onSelect, favorites, onFavorite }) {
+function Archive({ onSelect }) {
   const [activeType, setActiveType] = useState('全部')
   const [activeYear, setActiveYear] = useState('全部')
   const [activeRegion, setActiveRegion] = useState('全部')
-  const [favoritesOnly, setFavoritesOnly] = useState(false)
   const [query, setQuery] = useState('')
   const [sort, setSort] = useState('year-asc')
   const [viewMode, setViewMode] = useState(() => {
@@ -226,11 +224,11 @@ function Archive({ onSelect, favorites, onFavorite }) {
   const filtered = useMemo(() => {
     return filterArchive(archiveItems, {
       type: activeType, year: activeYear, region: activeRegion,
-      favorites, favoritesOnly, query, sort,
+      query, sort,
     })
-  }, [activeType, activeYear, activeRegion, favorites, favoritesOnly, query, sort])
+  }, [activeType, activeYear, activeRegion, query, sort])
 
-  const reset = () => { setActiveType('全部'); setActiveYear('全部'); setActiveRegion('全部'); setFavoritesOnly(false); setQuery(''); setSort('year-asc') }
+  const reset = () => { setActiveType('全部'); setActiveYear('全部'); setActiveRegion('全部'); setQuery(''); setSort('year-asc') }
 
   return (
     <section className="archive-section" id="archive">
@@ -251,7 +249,6 @@ function Archive({ onSelect, favorites, onFavorite }) {
       <div className="results-meta">
         <span aria-live="polite">RESULT / {String(filtered.length).padStart(2, '0')}</span>
         <div className="results-actions">
-          <button className={favoritesOnly ? 'favorites-filter active' : 'favorites-filter'} onClick={() => setFavoritesOnly(value => !value)}>★ MY ARCHIVE / {String(favorites.length).padStart(2, '0')}</button>
           <div className="view-switch" role="group" aria-label="馆藏显示方式">
             <button className={viewMode === 'grid' ? 'active' : ''} onClick={() => setViewMode('grid')} aria-pressed={viewMode === 'grid'}>GRID</button>
             <button className={viewMode === 'list' ? 'active' : ''} onClick={() => setViewMode('list')} aria-pressed={viewMode === 'list'}>LIST</button>
@@ -259,7 +256,7 @@ function Archive({ onSelect, favorites, onFavorite }) {
         </div>
         <span>{activeYear === '全部' ? '1995—2005' : activeYear} · {typeMeta[activeType].en}</span>
       </div>
-      <div className={`card-grid ${viewMode === 'list' ? 'list-view' : ''}`} id="archive-results" role="list">{filtered.map((item, index) => <ArchiveCard item={item} index={index} onOpen={onSelect} isFavorite={favorites.includes(item.code)} onFavorite={onFavorite} key={item.code} />)}</div>
+      <div className={`card-grid ${viewMode === 'list' ? 'list-view' : ''}`} id="archive-results" role="list">{filtered.map((item, index) => <ArchiveCard item={item} index={index} onOpen={onSelect} key={item.code} />)}</div>
       {filtered.length === 0 && <div className="empty-state"><span>NO SIGNAL FOUND</span><p>没有找到匹配的文化信号。</p><button onClick={reset}>RESET FILTERS / 重置</button></div>}
     </section>
   )
@@ -280,11 +277,6 @@ function Footer() {
 
 export default function App() {
   const [selectedItem, setSelectedItem] = useState(null)
-  const [favorites, setFavorites] = useState(() => {
-    if (typeof window === 'undefined') return []
-    try { return JSON.parse(window.localStorage.getItem('9505-favorites') || '[]') }
-    catch { return [] }
-  })
 
   useEffect(() => {
     const syncFromHash = () => {
@@ -297,8 +289,6 @@ export default function App() {
     return () => window.removeEventListener('hashchange', syncFromHash)
   }, [])
 
-  useEffect(() => { window.localStorage.setItem('9505-favorites', JSON.stringify(favorites)) }, [favorites])
-
   const scrollToArchive = useCallback(() => document.querySelector('#archive')?.scrollIntoView({ behavior: 'smooth' }), [])
   const openItem = useCallback(item => {
     setSelectedItem(item)
@@ -308,7 +298,6 @@ export default function App() {
     setSelectedItem(null)
     if (window.location.hash.startsWith('#entry/')) window.history.replaceState(null, '', `${window.location.pathname}${window.location.search}#archive`)
   }, [])
-  const toggleFavorite = useCallback(code => setFavorites(current => toggleFavoriteCode(current, code)), [])
   const openRandom = useCallback(() => {
     const next = archiveItems[Math.floor(Math.random() * archiveItems.length)]
     openItem(next)
@@ -318,10 +307,10 @@ export default function App() {
       <a className="skip-link" href="#archive">跳至馆藏目录</a>
       <div id="app-shell">
         <Header />
-        <main id="main-content"><Hero onExplore={scrollToArchive} onRandom={openRandom} /><Archive onSelect={openItem} favorites={favorites} onFavorite={toggleFavorite} /><Sources /></main>
+        <main id="main-content"><Hero onExplore={scrollToArchive} onRandom={openRandom} /><Archive onSelect={openItem} /><Sources /></main>
         <Footer />
       </div>
-      <DetailDialog item={selectedItem} onClose={closeItem} onOpen={openItem} isFavorite={selectedItem ? favorites.includes(selectedItem.code) : false} onFavorite={toggleFavorite} />
+      <DetailDialog item={selectedItem} onClose={closeItem} onOpen={openItem} />
     </>
   )
 }

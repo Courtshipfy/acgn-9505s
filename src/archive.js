@@ -7,8 +7,6 @@ export function filterArchive(items, options = {}) {
     type = '全部',
     year = '全部',
     region = '全部',
-    favorites = [],
-    favoritesOnly = false,
     query = '',
     sort = 'year-asc',
   } = options
@@ -18,7 +16,6 @@ export function filterArchive(items, options = {}) {
     return (type === '全部' || item.type === type) &&
       (year === '全部' || item.year === year) &&
       (region === '全部' || item.region === region) &&
-      (!favoritesOnly || favorites.includes(item.code)) &&
       (!normalized || searchable.includes(normalized))
   })
 
@@ -43,10 +40,6 @@ export function getRelatedSignals(items, item, limit = 3) {
     .sort((a, b) => b.score - a.score || Math.abs(a.candidate.year - item.year) - Math.abs(b.candidate.year - item.year))
     .slice(0, limit)
     .map(result => result.candidate)
-}
-
-export function toggleFavoriteCode(favorites, code) {
-  return favorites.includes(code) ? favorites.filter(item => item !== code) : [...favorites, code]
 }
 
 export function createEntryHash(code) {
