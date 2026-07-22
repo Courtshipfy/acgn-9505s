@@ -147,3 +147,12 @@ test('页面运行时封面与字体不依赖第三方资源', () => {
   const styles = readFileSync('src/styles.css', 'utf8')
   assert.doesNotMatch(styles, /@import\s+url\(['"]https?:\/\//)
 })
+
+test('手机视口避免误触缩放并保留辅助缩放能力', () => {
+  const html = readFileSync('index.html', 'utf8')
+  const styles = readFileSync('src/styles.css', 'utf8')
+  assert.match(html, /width=device-width,\s*initial-scale=1(?:\.0)?,\s*viewport-fit=cover/)
+  assert.doesNotMatch(html, /user-scalable=no|maximum-scale=1/)
+  assert.match(styles, /touch-action:\s*manipulation/)
+  assert.match(styles, /\.archive-tools input,\s*\.archive-tools select\s*\{[^}]*font-size:\s*16px/s)
+})
