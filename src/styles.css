@@ -242,7 +242,7 @@ footer { min-height: 690px; padding: 105px 4vw 30px; display: grid; grid-templat
 .cover-art { background: #e7e1d7; box-shadow: 5px 5px 0 #171613; }
 .cover-art span { font-size: 75px; }
 .cover-art i:nth-of-type(3) { width: 34px; height: 34px; border-width: 6px; }
-.cover-image { display: block; width: 100%; height: 100%; object-fit: fill; filter: saturate(.88) contrast(1.03); }
+.cover-image { display: block; width: 100%; height: 100%; object-fit: contain; filter: saturate(.88) contrast(1.03); }
 .referenced-cover { filter: saturate(.82) contrast(1.04); }
 .card-type { font-size: 10px; }
 .card-body { padding: 18px; }
@@ -399,7 +399,7 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
   .results-actions { justify-content: space-between; }
   .list-view .card-open { grid-template-columns: 96px minmax(0, 1fr); }
   .list-view .card-visual { height: 142px; padding: 10px 8px; gap: 6px; }
-  .list-view .cover-image { width: 100%; height: 100%; }
+  .list-view .cover-image { width: 100%; height: 100%; object-fit: contain; }
   .list-view .card-year { font-size: 10px; }.list-view .card-type { font-size: 9px; }
   .list-view .card-body { display: block; padding: 14px; }.list-view .card-body h3 { margin: 9px 0 15px; font-size: 18px; }
   .list-view .card-note { display: flex; }.list-view .card-format { display: none; }
