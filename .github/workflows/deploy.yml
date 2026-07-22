@@ -66,9 +66,9 @@ jobs:
         run: |
           ssh -p "$VPS_PORT" -o IdentitiesOnly=yes "$VPS_USER@$VPS_HOST" '
             set -eu
-            target=/var/www/9505.courtship.top
+            target=/var/www/acgnmuseum.com
             archive=/home/deploy9505/site.tar.gz
-            test "$target" = /var/www/9505.courtship.top
+            test "$target" = /var/www/acgnmuseum.com
             test -d "$target"
             test -f "$archive"
             find "$target" -mindepth 1 -maxdepth 1 -exec rm -rf -- {} +
