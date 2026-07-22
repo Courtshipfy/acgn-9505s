@@ -116,7 +116,7 @@ button, a, input, select { touch-action: manipulation; -webkit-tap-highlight-col
 .card-visual-meta { position: relative; z-index: 1; display: flex; align-items: center; justify-content: space-between; gap: 8px; }
 .card-year { font: 700 12px '9505 Andale Mono', 'Andale Mono', 'Lucida Console', 'Courier New', monospace; }
 .card-type { padding: 3px 7px; border: 1px solid currentColor; border-radius: 20px; font-size: 9px; white-space: nowrap; }
-.card-cover-frame { position: relative; z-index: 1; min-height: 0; overflow: hidden; border: 1px solid #171613; background: #c4bdb0; }
+.card-cover-frame { position: relative; z-index: 1; min-height: 0; overflow: hidden; background: #c4bdb0; }
 .cover-art { position: relative; width: min(64%, 190px); height: calc(100% - 8px); display: grid; place-items: center; border: 1px solid #171613; background: #e7dfd1; box-shadow: 9px 9px 0 #171613; transform: rotate(-2deg); overflow: hidden; }
 .cover-art span { font: 900 105px/.8 '9505 Verdana', Verdana, 'Microsoft YaHei UI', 'Microsoft YaHei', sans-serif; letter-spacing: -.1em; }
 .cover-art i { position: absolute; width: 140%; height: 1px; background: #171613; transform: rotate(35deg); }.cover-art i:nth-of-type(2) { transform: rotate(-35deg); }.cover-art i:nth-of-type(3) { width: 45px; height: 45px; border: 8px solid #171613; background: transparent; border-radius: 50%; }
