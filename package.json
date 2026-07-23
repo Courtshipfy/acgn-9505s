@@ -9,6 +9,7 @@
     "preview": "vite preview",
     "test": "node --test",
     "generate:thumbnails": "python scripts/generate-cover-thumbnails.py",
+    "generate:index": "node scripts/generate-collection-index.mjs",
     "sync:wikimedia": "node scripts/sync-wikimedia.mjs",
     "expand:wikimedia": "node scripts/expand-wikimedia-collection.mjs"
   },
