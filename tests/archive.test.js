@@ -157,3 +157,12 @@ test('卡片不提供收藏控件，识别信息在封面外的文档流中', ()
   assert.doesNotMatch(styles, /\.card-cover-frame\s*\{[^}]*border:/s)
   assert.doesNotMatch(styles, /\.card-cover-frame\s*\{[^}]*background:/s)
 })
+
+test('首屏不一次性渲染和加载全部馆藏封面', () => {
+  const app = readFileSync('src/App.jsx', 'utf8')
+  const styles = readFileSync('src/styles.css', 'utf8')
+  assert.match(app, /loading="lazy"\s+decoding="async"/)
+  assert.match(app, /filtered\.slice\(0,\s*visibleCount\)/)
+  assert.match(app, /LOAD MORE/)
+  assert.match(styles, /content-visibility:\s*auto/)
+})

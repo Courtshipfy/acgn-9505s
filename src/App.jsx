@@ -4,6 +4,7 @@ import { createEntryHash, filterArchive, getRegions, getRelatedSignals, parseEnt
 
 const years = Array.from({ length: 11 }, (_, index) => 1995 + index)
 const regions = getRegions(archiveItems)
+const ARCHIVE_BATCH_SIZE = 18
 const getCoverSrc = item => ['approved', 'referenced'].includes(item.cover?.status) ? item.cover.localSrc : null
 
 function Header() {
@@ -70,7 +71,7 @@ function ArchiveCard({ item, index, onOpen }) {
           <div className="card-visual-meta"><span className="card-year">{item.year}</span><span className="card-type">{item.type}</span></div>
           <div className="card-cover-frame">
             {coverSrc
-              ? <img className={`cover-image ${item.cover.status === 'referenced' ? 'referenced-cover' : ''}`} src={coverSrc} alt="" referrerPolicy="no-referrer" />
+              ? <img className={`cover-image ${item.cover.status === 'referenced' ? 'referenced-cover' : ''}`} src={coverSrc} alt="" loading="lazy" decoding="async" width="320" height="420" referrerPolicy="no-referrer" />
               : <div className="cover-art" aria-hidden="true"><span>{item.code.slice(0, 1)}</span><i /><i /><i /></div>}
           </div>
         </div>
@@ -208,6 +209,7 @@ function Archive({ onSelect }) {
   const [activeRegion, setActiveRegion] = useState('全部')
   const [query, setQuery] = useState('')
   const [sort, setSort] = useState('year-asc')
+  const [visibleCount, setVisibleCount] = useState(ARCHIVE_BATCH_SIZE)
   const [viewMode, setViewMode] = useState(() => {
     if (typeof window === 'undefined' || typeof window.matchMedia !== 'function') return 'grid'
     return window.matchMedia('(max-width: 620px)').matches ? 'list' : 'grid'
@@ -226,6 +228,13 @@ function Archive({ onSelect }) {
       type: activeType, year: activeYear, region: activeRegion,
       query, sort,
     })
+  }, [activeType, activeYear, activeRegion, query, sort])
+
+  const visibleItems = filtered.slice(0, visibleCount)
+  const hasMore = visibleItems.length < filtered.length
+
+  useEffect(() => {
+    setVisibleCount(ARCHIVE_BATCH_SIZE)
   }, [activeType, activeYear, activeRegion, query, sort])
 
   const reset = () => { setActiveType('全部'); setActiveYear('全部'); setActiveRegion('全部'); setQuery(''); setSort('year-asc') }
@@ -256,7 +265,8 @@ function Archive({ onSelect }) {
         </div>
         <span>{activeYear === '全部' ? '1995—2005' : activeYear} · {typeMeta[activeType].en}</span>
       </div>
-      <div className={`card-grid ${viewMode === 'list' ? 'list-view' : ''}`} id="archive-results" role="list">{filtered.map((item, index) => <ArchiveCard item={item} index={index} onOpen={onSelect} key={item.code} />)}</div>
+      <div className={`card-grid ${viewMode === 'list' ? 'list-view' : ''}`} id="archive-results" role="list">{visibleItems.map((item, index) => <ArchiveCard item={item} index={index} onOpen={onSelect} key={item.code} />)}</div>
+      {hasMore && <button className="load-more" onClick={() => setVisibleCount(count => count + ARCHIVE_BATCH_SIZE)}>LOAD MORE / 加载更多 <span>{visibleItems.length} / {filtered.length}</span></button>}
       {filtered.length === 0 && <div className="empty-state"><span>NO SIGNAL FOUND</span><p>没有找到匹配的文化信号。</p><button onClick={reset}>RESET FILTERS / 重置</button></div>}
     </section>
   )
