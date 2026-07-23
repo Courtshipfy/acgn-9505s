@@ -801,23 +801,24 @@
   },
   {
     "code": "M-9702",
-    "requestedTitle": "Faye Wong (1997 album)",
-    "title": "Faye Wong (1997 album)",
-    "qid": "Q3067687",
-    "wikipediaUrl": "https://en.wikipedia.org/wiki/Faye_Wong_(1997_album)",
-    "revisionId": 1358967678,
-    "revisionTimestamp": "2026-06-12T04:34:46Z",
-    "extract": "Faye Wong (Chinese: 王菲) is the fifth Mandarin-language studio album (fourteenth overall) by Chinese singer Faye Wong. It was released on September 26, 1997, marking the first of her albums under the umbrella of EMI. There are 10 songs in total, one of which is a cover. Unlike her last studio album Fuzao, which was an artistic attempt, this time the album's style is more focused on the balance between mainstream and avant-garde. The album, which was produced by Alvin Leong, is generally languid, mellow and pervaded by an attitude of contentment.\nThe album sold only modestly in Hong Kong due to the Asian financial crisis, but did well in Taiwan and helped her popularity rise rapidly in mainland China. From this album onwards, Wong's music has been a mix of \"alternative\" songs and de rigueur love songs, not completely ignoring the market like Fuzao, but also keeping a distance from the mainstream music scene in Hong Kong and Taiwan. Since then, Wong has not considered Hong Kong as her main market, and only a few Cantonese songs are included in her later albums.",
+    "requestedTitle": "Homogenic",
+    "title": "Homogenic",
+    "qid": "Q617046",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Homogenic",
+    "revisionId": 1364184535,
+    "revisionTimestamp": "2026-07-15T01:13:00Z",
+    "extract": "Homogenic is the third studio album by Icelandic recording artist Björk. It was released on 20 September 1997 by One Little Indian Records. Produced by Björk and several collaborators, the album marked a stylistic change by combining electronic beats and string instruments.",
     "cover": {
-      "filename": "Faye_Wong_1997_Cover.jpg",
-      "sourcePage": "https://en.wikipedia.org/wiki/File:Faye_Wong_1997_Cover.jpg",
-      "originalUrl": "https://upload.wikimedia.org/wikipedia/en/7/7a/Faye_Wong_1997_Cover.jpg",
-      "localSrc": "./covers/m-9702.jpg",
-      "license": "Fair use",
-      "licenseUrl": "//en.wikipedia.org/wiki/File:Faye_Wong_1997_Cover.jpg",
-      "artist": ""
+      "filename": null,
+      "sourcePage": "https://en.wikipedia.org/wiki/Homogenic",
+      "originalUrl": null,
+      "localSrc": "./covers/m-9702.svg",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "artist": "THE 9505s Archive",
+      "generated": true
     },
-    "retrievedAt": "2026-07-22"
+    "retrievedAt": "2026-07-23"
   },
   {
     "code": "A-9702",
@@ -941,23 +942,24 @@
   },
   {
     "code": "M-0202",
-    "requestedTitle": "Moffou",
-    "title": "Moffou",
-    "qid": "Q3318222",
-    "wikipediaUrl": "https://en.wikipedia.org/wiki/Moffou",
-    "revisionId": 1104188996,
-    "revisionTimestamp": "2022-08-13T09:07:42Z",
-    "extract": "Moffou is the tenth studio album by Malian singer Salif Keita.  It was recorded during July and August 2001 at Les Studios De La Seine in Paris, France. Moffou was released in 2002 by Universal Jazz France.  The song \"Yamore\" features the Cape Verdean singer Cesária Évora.",
+    "requestedTitle": "Yankee Hotel Foxtrot",
+    "title": "Yankee Hotel Foxtrot",
+    "qid": "Q1091995",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Yankee_Hotel_Foxtrot",
+    "revisionId": 1361031216,
+    "revisionTimestamp": "2026-06-25T05:11:00Z",
+    "extract": "Yankee Hotel Foxtrot is the fourth studio album by American rock band Wilco. It was first streamed on the band website in 2001 and received a retail release through Nonesuch Records in 2002, presenting a more atmospheric and experimental sound.",
     "cover": {
-      "filename": "Moffou_albumCover.jpg",
-      "sourcePage": "https://en.wikipedia.org/wiki/File:Moffou_albumCover.jpg",
-      "originalUrl": "https://upload.wikimedia.org/wikipedia/en/f/f7/Moffou_albumCover.jpg",
-      "localSrc": "./covers/m-0202.jpg",
-      "license": "Fair use",
-      "licenseUrl": "//en.wikipedia.org/wiki/File:Moffou_albumCover.jpg",
-      "artist": ""
+      "filename": null,
+      "sourcePage": "https://en.wikipedia.org/wiki/Yankee_Hotel_Foxtrot",
+      "originalUrl": null,
+      "localSrc": "./covers/m-0202.svg",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "artist": "THE 9505s Archive",
+      "generated": true
     },
-    "retrievedAt": "2026-07-22"
+    "retrievedAt": "2026-07-23"
   },
   {
     "code": "C-0202",
@@ -981,23 +983,24 @@
   },
   {
     "code": "G-0202",
-    "requestedTitle": "Ragnarok Online",
-    "title": "Ragnarok Online",
-    "qid": "Q475628",
-    "wikipediaUrl": "https://en.wikipedia.org/wiki/Ragnarok_Online",
-    "revisionId": 1355680307,
-    "revisionTimestamp": "2026-05-23T07:26:34Z",
-    "extract": "Ragnarok Online (Korean: 라그나로크 온라인, Rageunarokeu Onrain marketed as Ragnarök, and alternatively subtitled The Final Destiny of the Gods) is a massive multiplayer online role-playing game (MMORPG) created by Gravity based on the manhwa Ragnarok by Lee Myung-jin. It was released in South Korea on 31 August 2002 for Microsoft Windows. The game has spawned an animated series, Ragnarok the Animation, and a sequel game, Ragnarok Online 2: Legend of the Second. The player's characters exist in a world with a player environment that includes NPCs (non-playable characters) that can be interacted with, and creatures spawning in maps that need to be defeated to level-up and to acquire items.",
+    "requestedTitle": "Metroid Prime",
+    "title": "Metroid Prime",
+    "qid": "Q1765733",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Metroid_Prime",
+    "revisionId": 1364267283,
+    "revisionTimestamp": "2026-07-15T15:15:00Z",
+    "extract": "Metroid Prime is a 2002 action-adventure game developed by Retro Studios and published by Nintendo for the GameCube. It was the first Metroid game to use three-dimensional computer graphics and a first-person perspective.",
     "cover": {
-      "filename": "RO_icon_file.png",
-      "sourcePage": "https://commons.wikimedia.org/wiki/File:RO_icon_file.png",
-      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fb/RO_icon_file.png",
-      "localSrc": "./covers/g-0202.png",
-      "license": "Public domain",
-      "licenseUrl": null,
-      "artist": ""
+      "filename": null,
+      "sourcePage": "https://en.wikipedia.org/wiki/Metroid_Prime",
+      "originalUrl": null,
+      "localSrc": "./covers/g-0202.svg",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "artist": "THE 9505s Archive",
+      "generated": true
     },
-    "retrievedAt": "2026-07-22"
+    "retrievedAt": "2026-07-23"
   },
   {
     "code": "C-0302",
@@ -1401,23 +1404,24 @@
   },
   {
     "code": "N-0301",
-    "requestedTitle": "The Kite Runner",
-    "title": "The Kite Runner",
-    "qid": "Q637839",
-    "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Kite_Runner",
-    "revisionId": 1364887848,
-    "revisionTimestamp": "2026-07-19T02:31:17Z",
-    "extract": "The Kite Runner is the debut novel of Afghan-American author Khaled Hosseini. Published in 2003 by Riverhead Books, it tells the story of Amir, a young Afghan boy from Wazir Akbar Khan, Kabul. The story is set against a backdrop of tumultuous events, beginning with the collapse of Afghanistan's monarchy and the Afghan conflict that sparked shortly thereafter, with a particular focus on the Soviet–Afghan War and the exodus of Afghan refugees, as well as the rise of the Taliban regime.\nHosseini has commented that he considers The Kite Runner to be a father–son relationship story, emphasizing the familial aspects of the narrative, an element that he continued to use in his later works. Themes of guilt and redemption feature prominently in the novel, with a pivotal scene depicting an act of sexual assault inflicted upon Amir's friend Hassan, which Amir fails to prevent, and which ends their friendship. The latter half of the book centers on Amir's attempts to atone for this transgression by rescuing Hassan's son two decades later.\nThe Kite Runner became a bestseller after being printed in paperback and was popularized in book clubs. It appeared on the New York Times best-seller list for over two years, with over seven million copies sold in the United States. Reviews were generally positive, though parts of the plot drew significant controversy in Afghanistan. A number of adaptations were created following publication, including a 2007 film of the same name, several stage performances, and a graphic novel. The novel is also available in a multi-CD audiobook narrated by the author.",
+    "requestedTitle": "The Known World",
+    "title": "The Known World",
+    "qid": "Q7744892",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Known_World",
+    "revisionId": 1357986606,
+    "revisionTimestamp": "2026-06-05T21:48:00Z",
+    "extract": "The Known World is a 2003 historical novel by Edward P. Jones. Set in Virginia during the antebellum era, it examines the ownership of Black slaves by both White and Black Americans.",
     "cover": {
-      "filename": "Kite_runner.jpg",
-      "sourcePage": "https://en.wikipedia.org/wiki/File:Kite_runner.jpg",
-      "originalUrl": "https://upload.wikimedia.org/wikipedia/en/6/62/Kite_runner.jpg",
-      "localSrc": "./covers/n-0301.jpg",
-      "license": "Fair use",
-      "licenseUrl": "//en.wikipedia.org/wiki/File:Kite_runner.jpg",
-      "artist": ""
+      "filename": null,
+      "sourcePage": "https://en.wikipedia.org/wiki/The_Known_World",
+      "originalUrl": null,
+      "localSrc": "./covers/n-0301.svg",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "artist": "THE 9505s Archive",
+      "generated": true
     },
-    "retrievedAt": "2026-07-22"
+    "retrievedAt": "2026-07-23"
   },
   {
     "code": "N-0302",
@@ -1561,23 +1565,24 @@
   },
   {
     "code": "A-9703",
-    "requestedTitle": "A Chinese Ghost Story: The Tsui Hark Animation",
-    "title": "A Chinese Ghost Story: The Tsui Hark Animation",
-    "qid": "Q707634",
-    "wikipediaUrl": "https://en.wikipedia.org/wiki/A_Chinese_Ghost_Story:_The_Tsui_Hark_Animation",
-    "revisionId": 1365328944,
-    "revisionTimestamp": "2026-07-21T18:48:11Z",
-    "extract": "A Chinese Ghost Story: The Tsui Hark Animation (Chinese: 小倩) is a 1997 Hong Kong fantasy animated film. It was written and produced by Tsui Hark and his production company Film Workshop. The animation was produced by Japanese animation studio Triangle Staff.\n\n",
+    "requestedTitle": "Perfect Blue",
+    "title": "Perfect Blue",
+    "qid": "Q1205051",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Perfect_Blue",
+    "revisionId": 1365290863,
+    "revisionTimestamp": "2026-07-21T13:25:00Z",
+    "extract": "Perfect Blue is a 1997 Japanese animated psychological horror film directed by Satoshi Kon. It follows a former idol pursuing an acting career while stalking, murders and a destabilized sense of reality blur fantasy and reality.",
     "cover": {
-      "filename": "Chinese-Ghost-Story-Animation-1997-film-poster.jpg",
-      "sourcePage": "https://en.wikipedia.org/wiki/File:Chinese-Ghost-Story-Animation-1997-film-poster.jpg",
-      "originalUrl": "https://upload.wikimedia.org/wikipedia/en/7/7f/Chinese-Ghost-Story-Animation-1997-film-poster.jpg",
-      "localSrc": "./covers/a-9703.jpg",
-      "license": "Fair use",
-      "licenseUrl": "//en.wikipedia.org/wiki/File:Chinese-Ghost-Story-Animation-1997-film-poster.jpg",
-      "artist": ""
+      "filename": null,
+      "sourcePage": "https://en.wikipedia.org/wiki/Perfect_Blue",
+      "originalUrl": null,
+      "localSrc": "./covers/a-9703.svg",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "artist": "THE 9505s Archive",
+      "generated": true
     },
-    "retrievedAt": "2026-07-22"
+    "retrievedAt": "2026-07-23"
   },
   {
     "code": "C-9803",
@@ -1601,16 +1606,16 @@
   },
   {
     "code": "G-9902",
-    "requestedTitle": "The Longest Journey",
-    "title": "The Longest Journey",
-    "qid": "Q15882820",
-    "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Longest_Journey",
-    "revisionId": 1353124052,
-    "revisionTimestamp": "2026-05-08T09:30:55Z",
-    "extract": "The Longest Journey may refer to:\n\nThe Longest Journey (novel), a 1907 novel by E. M. Forster\nThe Longest Journey (video game), a 1999 video game by Funcom\nDreamfall: The Longest Journey, the game's 2006 sequel\nDe Langste Reis (Dutch for 'The Longest Journey'), a 1997 film by Pieter Verhoeff",
+    "requestedTitle": "Shenmue (video game)",
+    "title": "Shenmue (video game)",
+    "qid": "Q654354",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Shenmue_(video_game)",
+    "revisionId": 1364856567,
+    "revisionTimestamp": "2026-07-18T23:01:00Z",
+    "extract": "Shenmue is a 1999 action-adventure game developed and published by Sega for the Dreamcast. Its detailed open world includes interactive objects, day and night, changing weather, scheduled non-player characters and quick-time events.",
     "cover": {
       "filename": null,
-      "sourcePage": "https://en.wikipedia.org/wiki/The_Longest_Journey",
+      "sourcePage": "https://en.wikipedia.org/wiki/Shenmue_(video_game)",
       "originalUrl": null,
       "localSrc": "./covers/g-9902.svg",
       "license": "CC0 1.0",
@@ -1618,7 +1623,7 @@
       "artist": "THE 9505s Archive",
       "generated": true
     },
-    "retrievedAt": "2026-07-22"
+    "retrievedAt": "2026-07-23"
   },
   {
     "code": "C-0004",
@@ -1642,23 +1647,24 @@
   },
   {
     "code": "A-0102",
-    "requestedTitle": "My Life as McDull",
-    "title": "My Life as McDull",
-    "qid": "Q698728",
-    "wikipediaUrl": "https://en.wikipedia.org/wiki/My_Life_as_McDull",
-    "revisionId": 1341625593,
-    "revisionTimestamp": "2026-03-04T04:24:08Z",
-    "extract": "My Life as McDull (Chinese: 麥兜故事) is a 2001 Hong Kong animated feature film directed by Toe Yuen. The film surrounds the life of McDull, a hugely popular cartoon pig character created by Alice Mak and Brian Tse which has appeared on comics ever since the 1990s. In 2004, the sequel to this film, McDull, Prince de la Bun, was released.\nKelvin Chan of the South China Morning Post described McDull as \"slow-witted\".",
+    "requestedTitle": "Millennium Actress",
+    "title": "Millennium Actress",
+    "qid": "Q939736",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Millennium_Actress",
+    "revisionId": 1361996976,
+    "revisionTimestamp": "2026-07-01T09:13:00Z",
+    "extract": "Millennium Actress is a 2001 Japanese animated drama film co-written and directed by Satoshi Kon and produced by Madhouse. As a retired actress recounts her life, the boundary between cinema and reality gradually becomes blurred.",
     "cover": {
-      "filename": "My_life_as_mcdull.jpg",
-      "sourcePage": "https://en.wikipedia.org/wiki/File:My_life_as_mcdull.jpg",
-      "originalUrl": "https://upload.wikimedia.org/wikipedia/en/a/aa/My_life_as_mcdull.jpg",
-      "localSrc": "./covers/a-0102.jpg",
-      "license": "Fair use",
-      "licenseUrl": "//en.wikipedia.org/wiki/File:My_life_as_mcdull.jpg",
-      "artist": ""
+      "filename": null,
+      "sourcePage": "https://en.wikipedia.org/wiki/Millennium_Actress",
+      "originalUrl": null,
+      "localSrc": "./covers/a-0102.svg",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "artist": "THE 9505s Archive",
+      "generated": true
     },
-    "retrievedAt": "2026-07-22"
+    "retrievedAt": "2026-07-23"
   },
   {
     "code": "C-0203",
@@ -1683,23 +1689,24 @@
   },
   {
     "code": "G-0302",
-    "requestedTitle": "Beyond Good & Evil (video game)",
-    "title": "Beyond Good & Evil (video game)",
-    "qid": "Q794367",
-    "wikipediaUrl": "https://en.wikipedia.org/wiki/Beyond_Good_%26_Evil_(video_game)",
-    "revisionId": 1356231468,
-    "revisionTimestamp": "2026-05-26T13:58:29Z",
-    "extract": "Beyond Good & Evil is a 2003 action-adventure game developed by Ubisoft Montpellier and published by Ubisoft for PlayStation 2, Windows, Xbox, and GameCube. The story follows the adventures of Jade, an investigative reporter, martial artist, and spy working with a resistance movement to reveal a sinister alien conspiracy. Players control Jade and other allies, solving puzzles, fighting enemies, obtaining photographic evidence and, later in the game, travelling to space.\nMichel Ancel, creator of the Rayman series, envisioned the game as the first part of a trilogy. The game was developed under the codename \"Project BG&E\" by 30 employees of Ubisoft's studio divisions in Montpellier and Milan, with production lasting more than three years. One of the main goals of the game is to create a meaningful story while giving players much freedom, though the game adopts a relatively linear structure. The game was received poorly when it was shown at E3 2002, and it prompted the developers to change some of the game's elements, including Jade's design. Ancel also attempted to streamline the game in order to make it more commercially appealing.\nBeyond Good & Evil received generally favorable reviews upon release, with critics praising the game's animation, setting, story and design, but criticizing its combat and technical issues. The game received a nomination for \"Game of the Year\" at the 2004 Game Developers Choice Awards. While the game was considered a commercial failure at launch, it has since developed a cult following and is even considered by some to be one of the greatest video games ever made.\nA full HD remastered version of the game was released on Xbox Live Arcade in March 2011 and on PlayStation Network in June 2011. A prequel, Beyond Good and Evil 2, is in development and was announced at E3 2017. A hybrid live-action/animated film adaptation is currently in the works at Netflix. Another remaster, titled the 20th Anniversary Edition, was released on June 25, 2024.",
+    "requestedTitle": "Star Wars: Knights of the Old Republic (video game)",
+    "title": "Star Wars: Knights of the Old Republic (video game)",
+    "qid": "Q725902",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Star_Wars:_Knights_of_the_Old_Republic_(video_game)",
+    "revisionId": 1364988818,
+    "revisionTimestamp": "2026-07-19T17:49:00Z",
+    "extract": "Star Wars: Knights of the Old Republic is a role-playing video game developed by BioWare and published by LucasArts. It was released for Xbox and Windows in 2003 and became the first installment of the Knights of the Old Republic series.",
     "cover": {
-      "filename": "BGE-cover.jpg",
-      "sourcePage": "https://en.wikipedia.org/wiki/File:BGE-cover.jpg",
-      "originalUrl": "https://upload.wikimedia.org/wikipedia/en/c/ce/BGE-cover.jpg",
-      "localSrc": "./covers/g-0302.jpg",
-      "license": "Fair use",
-      "licenseUrl": "//en.wikipedia.org/wiki/File:BGE-cover.jpg",
-      "artist": ""
+      "filename": null,
+      "sourcePage": "https://en.wikipedia.org/wiki/Star_Wars:_Knights_of_the_Old_Republic_(video_game)",
+      "originalUrl": null,
+      "localSrc": "./covers/g-0302.svg",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "artist": "THE 9505s Archive",
+      "generated": true
     },
-    "retrievedAt": "2026-07-22"
+    "retrievedAt": "2026-07-23"
   },
   {
     "code": "M-0402",
@@ -1723,22 +1730,23 @@
   },
   {
     "code": "C-0502",
-    "requestedTitle": "Aya of Yop City",
-    "title": "Aya of Yop City",
-    "qid": "Q2734031",
-    "wikipediaUrl": "https://en.wikipedia.org/wiki/Aya_of_Yop_City",
-    "revisionId": 1341439551,
-    "revisionTimestamp": "2026-03-03T05:49:11Z",
-    "extract": "Aya of Yop City is a series of graphic novels written by Marguerite Abouet and drawn by Clément Oubrerie. The original albums were published in France by Gallimard from 2005. The volumes have also been translated into English and published by Drawn & Quarterly. The series was also translated into 15 languages.\nAlthough not autobiographical, the story is inspired on the author's life in the Ivory Coast. The authors adapted the first two books into an animated film of the same title, which was released in 2013.",
+    "requestedTitle": "Vinland Saga (manga)",
+    "title": "Vinland Saga (manga)",
+    "qid": "Q930990",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Vinland_Saga_(manga)",
+    "revisionId": 1364850480,
+    "revisionTimestamp": "2026-07-18T22:06:00Z",
+    "extract": "Vinland Saga is a Japanese manga series written and illustrated by Makoto Yukimura. It began serialization in 2005 and follows a fictionalized Thorfinn as he changes from a revenge-driven teenager into a pacifistic young man.",
     "cover": {
-      "filename": "Book_cover_of_graphic_novel_Aya_Life_in_Yop_City.jpg",
-      "sourcePage": "https://en.wikipedia.org/wiki/File:Book_cover_of_graphic_novel_Aya_Life_in_Yop_City.jpg",
-      "originalUrl": "https://upload.wikimedia.org/wikipedia/en/0/0b/Book_cover_of_graphic_novel_Aya_Life_in_Yop_City.jpg",
-      "localSrc": "./covers/c-0502.jpg",
-      "license": "Fair use",
-      "licenseUrl": "//en.wikipedia.org/wiki/File:Book_cover_of_graphic_novel_Aya_Life_in_Yop_City.jpg",
-      "artist": "Marguerite Abouet, Clément Oubrerie/Drawn and Quarterly"
+      "filename": null,
+      "sourcePage": "https://en.wikipedia.org/wiki/Vinland_Saga_(manga)",
+      "originalUrl": null,
+      "localSrc": "./covers/c-0502.svg",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "artist": "THE 9505s Archive",
+      "generated": true
     },
-    "retrievedAt": "2026-07-22"
+    "retrievedAt": "2026-07-23"
   }
 ]

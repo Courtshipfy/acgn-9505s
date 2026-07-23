@@ -18,7 +18,7 @@ test('馆藏完整覆盖 1995—2005 与五个频道', () => {
 test('搜索可匹配标题、作者、地区、标签和简介', () => {
   assert.deepEqual(filterArchive(archiveItems, { query: '周杰伦' }).map(item => item.code), ['M-0002'])
   assert.ok(filterArchive(archiveItems, { query: '赛博朋克' }).some(item => item.code === 'A-0201'))
-  assert.ok(filterArchive(archiveItems, { query: '马里' }).some(item => item.code === 'M-0202'))
+  assert.ok(filterArchive(archiveItems, { query: '冰岛' }).some(item => item.code === 'M-9702'))
 })
 
 test('年份、频道、地区与关键词筛选可以组合', () => {

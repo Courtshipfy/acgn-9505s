@@ -25,7 +25,7 @@ const additions = [
   ['N-0102', 'Sandalwood Death'],
   ['N-0201', 'Kafka on the Shore'],
   ['N-0202', 'Coraline'],
-  ['N-0301', 'The Kite Runner'],
+  ['N-0301', 'The Known World'],
   ['N-0302', 'Purple Hibiscus'],
   ['N-0401', '2666'],
   ['N-0402', 'Jonathan Strange & Mr Norrell'],
@@ -33,16 +33,30 @@ const additions = [
   ['N-0502', 'Brothers (Yu novel)'],
   ['M-9502', 'Jagged Little Pill'],
   ['G-9602', 'Tomb Raider (1996 video game)'],
-  ['A-9703', 'A Chinese Ghost Story: The Tsui Hark Animation'],
+  ['A-9703', 'Perfect Blue'],
   ['C-9803', 'Vagabond (manga)'],
-  ['G-9902', 'The Longest Journey'],
+  ['G-9902', 'Shenmue (video game)'],
   ['C-0004', 'Jimmy Corrigan, the Smartest Kid on Earth'],
-  ['A-0102', 'My Life as McDull'],
+  ['A-0102', 'Millennium Actress'],
   ['C-0203', "The Rabbi's Cat"],
-  ['G-0302', 'Beyond Good & Evil (video game)'],
+  ['G-0302', 'Star Wars: Knights of the Old Republic (video game)'],
   ['M-0402', 'Funeral (Arcade Fire album)'],
-  ['C-0502', 'Aya of Yop City'],
+  ['C-0502', 'Vinland Saga'],
+  ['M-9702', 'Homogenic'],
+  ['M-0202', 'Yankee Hotel Foxtrot'],
+  ['G-0202', 'Metroid Prime'],
 ]
+
+const requestedCodes = new Set(process.argv.slice(2).map(code => code.toUpperCase()))
+const selectedAdditions = requestedCodes.size
+  ? additions.filter(([code]) => requestedCodes.has(code))
+  : additions
+
+if (requestedCodes.size && selectedAdditions.length !== requestedCodes.size) {
+  const knownCodes = new Set(selectedAdditions.map(([code]) => code))
+  const unknownCodes = [...requestedCodes].filter(code => !knownCodes.has(code))
+  throw new Error(`Unknown collection codes: ${unknownCodes.join(', ')}`)
+}
 
 const fetchJson = async url => {
   const response = await fetch(url, { headers: { 'Api-User-Agent': userAgent, 'User-Agent': userAgent } })
@@ -124,7 +138,7 @@ const raw = JSON.parse((await readFile(rawPath, 'utf8')).replace(/^\uFEFF/, ''))
 const collectionByCode = new Map(collection.map(item => [item.code, item]))
 const rawByCode = new Map(raw.map(item => [item.code, item]))
 
-for (const [code, requestedTitle] of additions) {
+for (const [code, requestedTitle] of selectedAdditions) {
   const page = await fetchPage(requestedTitle)
   const cover = await fetchCover(page, code)
   const record = {
@@ -152,4 +166,4 @@ for (const [code, requestedTitle] of additions) {
 
 await writeFile(collectionPath, `${JSON.stringify([...collectionByCode.values()], null, 2)}\n`, 'utf8')
 await writeFile(rawPath, `${JSON.stringify([...rawByCode.values()], null, 2)}\n`, 'utf8')
-console.log(`Saved ${additions.length} additions; collection now has ${collectionByCode.size} imported records.`)
+console.log(`Saved ${selectedAdditions.length} additions; collection now has ${collectionByCode.size} imported records.`)
