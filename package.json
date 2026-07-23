@@ -8,6 +8,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "test": "node --test",
+    "generate:thumbnails": "python scripts/generate-cover-thumbnails.py",
     "sync:wikimedia": "node scripts/sync-wikimedia.mjs",
     "expand:wikimedia": "node scripts/expand-wikimedia-collection.mjs"
   },

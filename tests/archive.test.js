@@ -166,3 +166,15 @@ test('首屏不一次性渲染和加载全部馆藏封面', () => {
   assert.match(app, /LOAD MORE/)
   assert.match(styles, /content-visibility:\s*auto/)
 })
+
+test('馆藏卡片使用 WebP 缩略图且详情保留原始封面', () => {
+  const app = readFileSync('src/App.jsx', 'utf8')
+  assert.match(app, /function getCoverThumbnailSrc/)
+  assert.match(app, /function ArchiveCard[\s\S]*getCoverThumbnailSrc\(item\)/)
+  assert.match(app, /function DetailDialog[\s\S]*getCoverSrc\(item\)/)
+
+  for (const item of archiveItems.filter(item => item.cover?.localSrc && !item.cover.localSrc.endsWith('.svg'))) {
+    const filename = item.cover.localSrc.split('/').pop().replace(/\.(?:jpe?g|png)$/i, '.webp')
+    assert.ok(existsSync(`public/covers/thumbs/${filename}`), `${item.code} 缺少 WebP 缩略图`)
+  }
+})

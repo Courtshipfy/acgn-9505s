@@ -7,6 +7,12 @@ const regions = getRegions(archiveItems)
 const ARCHIVE_BATCH_SIZE = 18
 const getCoverSrc = item => ['approved', 'referenced'].includes(item.cover?.status) ? item.cover.localSrc : null
 
+function getCoverThumbnailSrc(item) {
+  const coverSrc = getCoverSrc(item)
+  if (!coverSrc || coverSrc.endsWith('.svg')) return coverSrc
+  return coverSrc.replace('./covers/', './covers/thumbs/').replace(/\.(?:jpe?g|png)$/i, '.webp')
+}
+
 function Header() {
   const [isOnline, setIsOnline] = useState(() => typeof navigator === 'undefined' || typeof navigator.onLine !== 'boolean' ? true : navigator.onLine)
   useEffect(() => {
@@ -63,7 +69,7 @@ function CategoryTabs({ active, setActive }) {
 }
 
 function ArchiveCard({ item, index, onOpen }) {
-  const coverSrc = getCoverSrc(item)
+  const coverSrc = getCoverThumbnailSrc(item)
   return (
     <article className="archive-card" role="listitem" style={{ '--accent': item.accent, '--delay': `${Math.min(index, 11) * 40}ms` }}>
       <button className="card-open" onClick={() => onOpen(item)} aria-label={`查看 ${item.title} 详情`}>
