@@ -178,3 +178,15 @@ test('馆藏卡片使用 WebP 缩略图且详情保留原始封面', () => {
     assert.ok(existsSync(`public/covers/thumbs/${filename}`), `${item.code} 缺少 WebP 缩略图`)
   }
 })
+
+test('Nginx 生产配置压缩文本资源并采用分层缓存策略', () => {
+  const configPath = 'deploy/nginx/performance.conf'
+  assert.ok(existsSync(configPath), '缺少 Nginx 性能配置')
+  const config = readFileSync(configPath, 'utf8')
+  assert.match(config, /gzip\s+on;/)
+  assert.match(config, /gzip_types[\s\S]*text\/css[\s\S]*application\/javascript/)
+  assert.match(config, /location\s+\^~\s+\/assets\/[\s\S]*max-age=31536000[\s\S]*immutable/)
+  assert.match(config, /location\s+\^~\s+\/covers\/thumbs\/[\s\S]*max-age=604800/)
+  assert.match(config, /location\s+=\s+\/index\.html[\s\S]*no-cache/)
+  assert.match(config, /location\s+=\s+\/sw\.js[\s\S]*no-cache/)
+})
