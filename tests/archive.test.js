@@ -111,7 +111,7 @@ test('质量优先替换馆藏使用可识别的真实封面而非占位题签',
 
 test('完整 Wikimedia 快照覆盖所有新增馆藏且本地文件存在', () => {
   const snapshot = JSON.parse(readFileSync('content/imports/wikimedia-collection-raw.json', 'utf8').replace(/^\uFEFF/, ''))
-  assert.equal(snapshot.length, 87)
+  assert.equal(snapshot.length, archiveItems.length - Object.keys(pilotMetadata).length)
   assert.equal(new Set(snapshot.map(item => item.code)).size, snapshot.length)
   assert.equal(new Set(snapshot.map(item => item.qid)).size, snapshot.length)
   for (const item of snapshot) {

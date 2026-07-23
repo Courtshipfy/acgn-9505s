@@ -1748,5 +1748,26 @@
       "generated": false
     },
     "retrievedAt": "2026-07-23"
+  },
+  {
+    "code": "G-9803",
+    "requestedTitle": "Half-Life (video game)",
+    "title": "Half-Life (video game)",
+    "qid": "Q279744",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Half-Life_(video_game)",
+    "revisionId": 1364967271,
+    "revisionTimestamp": "2026-07-19T15:17:00Z",
+    "extract": "Half-Life is a 1998 first-person shooter game developed by Valve Corporation and published by Sierra Studios for Windows. It was Valve's debut product and the first game in the Half-Life series. The player controls theoretical physicist Gordon Freeman as he escapes the Black Mesa Research Facility after a disastrous scientific experiment.",
+    "cover": {
+      "filename": "Half-Life_Cover_Art.jpg",
+      "sourcePage": "https://en.wikipedia.org/wiki/File:Half-Life_Cover_Art.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/en/f/fa/Half-Life_Cover_Art.jpg",
+      "localSrc": "./covers/g-9803.jpg",
+      "license": "Fair use; Wikipedia identification image",
+      "licenseUrl": null,
+      "artist": "",
+      "generated": false
+    },
+    "retrievedAt": "2026-07-23"
   }
 ]

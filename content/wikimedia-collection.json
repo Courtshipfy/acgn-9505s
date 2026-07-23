@@ -1180,5 +1180,18 @@
     "localSrc": "./covers/c-0502.jpg",
     "license": "Fair use; Wikipedia identification image",
     "assetType": "cover"
+  },
+  {
+    "code": "G-9803",
+    "qid": "Q279744",
+    "wikipediaTitle": "Half-Life (video game)",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Half-Life_(video_game)",
+    "revisionId": 1364967271,
+    "revisionTimestamp": "2026-07-19T15:17:00Z",
+    "sourcePage": "https://en.wikipedia.org/wiki/File:Half-Life_Cover_Art.jpg",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/en/f/fa/Half-Life_Cover_Art.jpg",
+    "localSrc": "./covers/g-9803.jpg",
+    "license": "Fair use; Wikipedia identification image",
+    "assetType": "cover"
   }
 ]

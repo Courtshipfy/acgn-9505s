@@ -1,6 +1,6 @@
 # 馆藏索引
 
-> 当前共 **95** 件馆藏，覆盖 **1995—2005** 年。索引由 `src/data.js` 自动生成。
+> 当前共 **96** 件馆藏，覆盖 **1995—2005** 年。索引由 `src/data.js` 自动生成。
 
 ## 快速概览
 
@@ -9,9 +9,9 @@
 | [音乐](#音乐) | 17 | 1995—2005 |
 | [动漫](#动漫) | 16 | 1995—2005 |
 | [漫画](#漫画) | 24 | 1995—2005 |
-| [游戏](#游戏) | 16 | 1995—2005 |
+| [游戏](#游戏) | 17 | 1995—2005 |
 | [小说](#小说) | 22 | 1995—2005 |
-| **合计** | **95** | **1995—2005** |
+| **合计** | **96** | **1995—2005** |
 
 ### 年份分布
 
@@ -20,7 +20,7 @@
 | 1995 | 2 | 1 | 2 | 1 | 2 | 8 |
 | 1996 | 1 | 1 | 2 | 2 | 2 | 8 |
 | 1997 | 2 | 3 | 1 | 1 | 2 | 9 |
-| 1998 | 1 | 1 | 3 | 2 | 2 | 9 |
+| 1998 | 1 | 1 | 3 | 3 | 2 | 10 |
 | 1999 | 1 | 2 | 1 | 2 | 2 | 8 |
 | 2000 | 2 | 1 | 4 | 1 | 2 | 10 |
 | 2001 | 1 | 2 | 2 | 1 | 2 | 8 |
@@ -113,7 +113,7 @@
 
 ### 游戏
 
-共 16 件。
+共 17 件。
 
 | 年份 | 编号 | 馆藏 / 创作者 | 地区 | 形式 | 标签 | 图像 |
 | ---: | --- | --- | --- | --- | --- | --- |
@@ -123,6 +123,7 @@
 | 1997 | `G-9701` | [Final Fantasy VII](https://en.wikipedia.org/wiki/Final_Fantasy_VII)<br>Square | 日本 | PLAYSTATION / RPG | `科幻` `叙事` | [封面](../../public/covers/g-9701.jpg) |
 | 1998 | `G-9801` | [Metal Gear Solid](https://en.wikipedia.org/wiki/Metal_Gear_Solid_(video_game))<br>Konami | 日本 | PLAYSTATION / STEALTH | `潜行` `电影化` | [封面](../../public/covers/g-9801.png) |
 | 1998 | `G-9802` | [StarCraft](https://en.wikipedia.org/wiki/StarCraft_(video_game))<br>Blizzard Entertainment | 美国／韩国文化圈 | PC / RTS | `即时战略` `电竞` | [封面](../../public/covers/g-9802.jpg) |
+| 1998 | `G-9803` | [Half-Life](https://en.wikipedia.org/wiki/Half-Life_(video_game))<br>Valve / Sierra Studios | 美国 | PC / FPS | `沉浸叙事` `关卡设计` | [封面](../../public/covers/g-9803.jpg) |
 | 1999 | `G-9901` | [Counter-Strike](https://en.wikipedia.org/wiki/Counter-Strike_(video_game))<br>Minh Le / Jess Cliffe | 全球 | PC / FPS | `竞技` `联机` | [封面](../../public/covers/g-9901.jpg) |
 | 1999 | `G-9902` | [Shenmue](https://en.wikipedia.org/wiki/Shenmue_(video_game))<br>SEGA AM2 / 铃木裕 | 日本 | DREAMCAST / OPEN-WORLD ADVENTURE | `城市模拟` `电影化叙事` | [封面](../../public/covers/g-9902.jpg) |
 | 2000 | `G-0001` | [The Sims](https://en.wikipedia.org/wiki/The_Sims_(video_game))<br>Maxis | 美国 | PC / SIMULATION | `生活模拟` `沙盒` | [封面](../../public/covers/g-0001.png) |

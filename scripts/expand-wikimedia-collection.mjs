@@ -45,6 +45,7 @@ const additions = [
   ['M-9702', 'Homogenic'],
   ['M-0202', 'Yankee Hotel Foxtrot'],
   ['G-0202', 'Metroid Prime'],
+  ['G-9803', 'Half-Life (video game)'],
 ]
 
 const requestedCodes = new Set(process.argv.slice(2).map(code => code.toUpperCase()))
