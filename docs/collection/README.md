@@ -43,14 +43,14 @@
 | 1995 | `M-9502` | [Jagged Little Pill](https://en.wikipedia.org/wiki/Jagged_Little_Pill)<br>Alanis Morissette | 加拿大 | ALBUM / CD | `Alternative Rock` `女性创作` | [封面](../../public/covers/m-9502.jpg) |
 | 1996 | `M-9601` | [Endtroducing.....](https://en.wikipedia.org/wiki/Endtroducing.....)<br>DJ Shadow | 美国 | ALBUM / CD | `Trip Hop` `采样` | [封面](../../public/covers/m-9601.jpg) |
 | 1997 | `M-9701` | [OK Computer](https://en.wikipedia.org/wiki/OK_Computer)<br>Radiohead | 英国 | ALBUM / CD | `Art Rock` `未来焦虑` | [封面](../../public/covers/m-9701.png) |
-| 1997 | `M-9702` | [Homogenic](https://en.wikipedia.org/wiki/Homogenic)<br>Björk | 冰岛 | ALBUM / CD | `Art Pop` `Electronic` | [封面](../../public/covers/m-9702.svg) |
+| 1997 | `M-9702` | [Homogenic](https://en.wikipedia.org/wiki/Homogenic)<br>Björk | 冰岛 | ALBUM / CD | `Art Pop` `Electronic` | [封面](../../public/covers/m-9702.png) |
 | 1998 | `M-9801` | [The Miseducation of Lauryn Hill](https://en.wikipedia.org/wiki/The_Miseducation_of_Lauryn_Hill)<br>Lauryn Hill | 美国 | ALBUM / CD | `Neo Soul` `Hip-Hop` | [封面](../../public/covers/m-9801.png) |
 | 1999 | `M-9901` | [The Battle of Los Angeles](https://en.wikipedia.org/wiki/The_Battle_of_Los_Angeles_(album))<br>Rage Against the Machine | 美国 | ALBUM / CD | `Rap Metal` `政治` | [封面](../../public/covers/m-9901.jpeg) |
 | 2000 | `M-0001` | [Kid A](https://zh.wikipedia.org/wiki/%E4%B8%80%E8%99%9F%E8%A4%87%E8%A3%BD%E4%BA%BA)<br>Radiohead | 英国 | ALBUM / CD | `Electronic` `Art Rock` | [封面](../../public/covers/kid-a.jpg) |
 | 2000 | `M-0002` | [Jay](https://zh.wikipedia.org/wiki/%E6%9D%B0%E5%80%AB_(%E5%B0%88%E8%BC%AF))<br>周杰伦 | 中国台湾 | ALBUM / CD | `华语流行` `R&B` | [封面](../../public/covers/jay.jpg) |
 | 2001 | `M-0101` | [Discovery](https://en.wikipedia.org/wiki/Discovery_(Daft_Punk_album))<br>Daft Punk | 法国 | ALBUM / CD | `French House` `Disco` | [封面](../../public/covers/m-0101.png) |
 | 2002 | `M-0201` | [The Eminem Show](https://en.wikipedia.org/wiki/The_Eminem_Show)<br>Eminem | 美国 | ALBUM / CD | `Hip-Hop` `自传` | [封面](../../public/covers/m-0201.jpg) |
-| 2002 | `M-0202` | [Yankee Hotel Foxtrot](https://en.wikipedia.org/wiki/Yankee_Hotel_Foxtrot)<br>Wilco | 美国 | ALBUM / CD | `Alternative Rock` `实验制作` | [封面](../../public/covers/m-0202.svg) |
+| 2002 | `M-0202` | [Yankee Hotel Foxtrot](https://en.wikipedia.org/wiki/Yankee_Hotel_Foxtrot)<br>Wilco | 美国 | ALBUM / CD | `Alternative Rock` `实验制作` | [封面](../../public/covers/m-0202.png) |
 | 2003 | `M-0301` | [Elephant](https://en.wikipedia.org/wiki/Elephant_(album))<br>The White Stripes | 美国 | ALBUM / CD | `Garage Rock` `Blues` | [封面](../../public/covers/m-0301.jpg) |
 | 2004 | `M-0401` | [American Idiot](https://en.wikipedia.org/wiki/American_Idiot)<br>Green Day | 美国 | ALBUM / CD | `Punk Rock` `概念专辑` | [封面](../../public/covers/m-0401.png) |
 | 2004 | `M-0402` | [Funeral](https://en.wikipedia.org/wiki/Funeral_(Arcade_Fire_album))<br>Arcade Fire | 加拿大 | ALBUM / CD | `Indie Rock` `群体编曲` | [封面](../../public/covers/m-0402.jpg) |
@@ -67,13 +67,13 @@
 | 1996 | `A-9601` | [浪客剑心](https://en.wikipedia.org/wiki/Rurouni_Kenshin_(1996_TV_series))<br>Studio Gallop | 日本 | TV / 94 EP. | `时代剧` `剑客` | [封面](../../public/covers/a-9601.png) |
 | 1997 | `A-9701` | [幽灵公主](https://en.wikipedia.org/wiki/Princess_Mononoke)<br>宫崎骏 / 吉卜力 | 日本 | FILM / 134 MIN. | `自然` `史诗` | [封面](../../public/covers/a-9701.png) |
 | 1997 | `A-9702` | [South Park](https://en.wikipedia.org/wiki/South_Park)<br>Trey Parker / Matt Stone | 美国 | TV / ANIMATION | `讽刺` `成人动画` | [封面](../../public/covers/a-9702.png) |
-| 1997 | `A-9703` | [Perfect Blue](https://en.wikipedia.org/wiki/Perfect_Blue)<br>今敏 / MADHOUSE | 日本 | FILM / 81 MIN. | `心理惊悚` `媒介现实` | [封面](../../public/covers/a-9703.svg) |
+| 1997 | `A-9703` | [Perfect Blue](https://en.wikipedia.org/wiki/Perfect_Blue)<br>今敏 / MADHOUSE | 日本 | FILM / 81 MIN. | `心理惊悚` `媒介现实` | [封面](../../public/covers/a-9703.png) |
 | 1998 | `A-9801` | [星际牛仔](https://en.wikipedia.org/wiki/Cowboy_Bebop)<br>SUNRISE | 日本 | TV / 26 EP. | `太空歌剧` `爵士` | [封面](../../public/covers/a-9801.jpg) |
 | 1999 | `A-9901` | [数码宝贝大冒险](https://en.wikipedia.org/wiki/Digimon_Adventure_(1999_TV_series))<br>东映动画 | 日本 | TV / 54 EP. | `异世界` `成长` | [封面](../../public/covers/a-9901.png) |
 | 1999 | `A-9902` | [The Iron Giant](https://en.wikipedia.org/wiki/The_Iron_Giant)<br>Brad Bird / Warner Bros. | 美国 | FILM / 87 MIN. | `科幻` `成长` | [封面](../../public/covers/a-9902.jpg) |
 | 2000 | `A-0001` | [FLCL](https://en.wikipedia.org/wiki/FLCL)<br>GAINAX / Production I.G | 日本 | OVA / 6 EP. | `青春` `实验` | [封面](../../public/covers/a-0001.jpg) |
 | 2001 | `A-0101` | [千与千寻](https://zh.wikipedia.org/wiki/%E5%8D%83%E4%B8%8E%E5%8D%83%E5%AF%BB)<br>宫崎骏 / 吉卜力 | 日本 | FILM / 125 MIN. | `奇幻` `成长` | [封面](../../public/covers/spirited-away.jpg) |
-| 2001 | `A-0102` | [Millennium Actress](https://en.wikipedia.org/wiki/Millennium_Actress)<br>今敏 / MADHOUSE | 日本 | FILM / 87 MIN. | `电影记忆` `元叙事` | [封面](../../public/covers/a-0102.svg) |
+| 2001 | `A-0102` | [Millennium Actress](https://en.wikipedia.org/wiki/Millennium_Actress)<br>今敏 / MADHOUSE | 日本 | FILM / 87 MIN. | `电影记忆` `元叙事` | [封面](../../public/covers/a-0102.jpg) |
 | 2002 | `A-0201` | [攻壳机动队 STAND ALONE COMPLEX](https://en.wikipedia.org/wiki/Ghost_in_the_Shell:_Stand_Alone_Complex)<br>Production I.G | 日本 | TV / 26 EP. | `赛博朋克` `政治` | [封面](../../public/covers/a-0201.jpg) |
 | 2003 | `A-0301` | [钢之炼金术师](https://en.wikipedia.org/wiki/Fullmetal_Alchemist_(TV_series))<br>BONES | 日本 | TV / 51 EP. | `炼金术` `冒险` | [封面](../../public/covers/a-0301.png) |
 | 2004 | `A-0401` | [混沌武士](https://en.wikipedia.org/wiki/Samurai_Champloo)<br>manglobe | 日本 | TV / 26 EP. | `时代剧` `Hip-Hop` | [封面](../../public/covers/a-0401.jpg) |
@@ -109,7 +109,7 @@
 | 2004 | `C-0401` | [银魂](https://en.wikipedia.org/wiki/Gintama)<br>空知英秋 | 日本 | SERIAL / SHONEN JUMP | `喜剧` `时代剧` | [封面](../../public/covers/c-0401.png) |
 | 2004 | `C-0402` | [Scott Pilgrim](https://en.wikipedia.org/wiki/Scott_Pilgrim)<br>Bryan Lee O’Malley | 加拿大 | GRAPHIC NOVEL SERIES | `青春` `游戏文化` | [封面](../../public/covers/c-0402.jpg) |
 | 2005 | `C-0501` | [绝望先生](https://en.wikipedia.org/wiki/Sayonara,_Zetsubou-Sensei)<br>久米田康治 | 日本 | SERIAL / SHONEN MAGAZINE | `讽刺` `黑色喜剧` | [封面](../../public/covers/c-0501.jpg) |
-| 2005 | `C-0502` | [Vinland Saga](https://en.wikipedia.org/wiki/Vinland_Saga_(manga))<br>幸村诚 | 日本 | SERIAL / WEEKLY SHONEN MAGAZINE | `历史` `反暴力` | [封面](../../public/covers/c-0502.svg) |
+| 2005 | `C-0502` | [Vinland Saga](https://en.wikipedia.org/wiki/Vinland_Saga_(manga))<br>幸村诚 | 日本 | SERIAL / WEEKLY SHONEN MAGAZINE | `历史` `反暴力` | [封面](../../public/covers/c-0502.jpg) |
 
 ### 游戏
 
@@ -124,13 +124,13 @@
 | 1998 | `G-9801` | [Metal Gear Solid](https://en.wikipedia.org/wiki/Metal_Gear_Solid_(video_game))<br>Konami | 日本 | PLAYSTATION / STEALTH | `潜行` `电影化` | [封面](../../public/covers/g-9801.png) |
 | 1998 | `G-9802` | [StarCraft](https://en.wikipedia.org/wiki/StarCraft_(video_game))<br>Blizzard Entertainment | 美国／韩国文化圈 | PC / RTS | `即时战略` `电竞` | [封面](../../public/covers/g-9802.jpg) |
 | 1999 | `G-9901` | [Counter-Strike](https://en.wikipedia.org/wiki/Counter-Strike_(video_game))<br>Minh Le / Jess Cliffe | 全球 | PC / FPS | `竞技` `联机` | [封面](../../public/covers/g-9901.jpg) |
-| 1999 | `G-9902` | [Shenmue](https://en.wikipedia.org/wiki/Shenmue_(video_game))<br>SEGA AM2 / 铃木裕 | 日本 | DREAMCAST / OPEN-WORLD ADVENTURE | `城市模拟` `电影化叙事` | [封面](../../public/covers/g-9902.svg) |
+| 1999 | `G-9902` | [Shenmue](https://en.wikipedia.org/wiki/Shenmue_(video_game))<br>SEGA AM2 / 铃木裕 | 日本 | DREAMCAST / OPEN-WORLD ADVENTURE | `城市模拟` `电影化叙事` | [封面](../../public/covers/g-9902.jpg) |
 | 2000 | `G-0001` | [The Sims](https://en.wikipedia.org/wiki/The_Sims_(video_game))<br>Maxis | 美国 | PC / SIMULATION | `生活模拟` `沙盒` | [封面](../../public/covers/g-0001.png) |
 | 2001 | `G-0101` | [Halo: Combat Evolved](https://en.wikipedia.org/wiki/Halo:_Combat_Evolved)<br>Bungie | 美国 | XBOX / FPS | `科幻` `主机` | [封面](../../public/covers/g-0101.jpg) |
 | 2002 | `G-0201` | [Grand Theft Auto: Vice City](https://en.wikipedia.org/wiki/Grand_Theft_Auto:_Vice_City)<br>Rockstar North | 英国 | PS2 / OPEN WORLD | `开放世界` `犯罪` | [封面](../../public/covers/g-0201.jpg) |
-| 2002 | `G-0202` | [Metroid Prime](https://en.wikipedia.org/wiki/Metroid_Prime)<br>Retro Studios / Nintendo | 美国／日本 | GAMECUBE / ACTION ADVENTURE | `第一人称探索` `环境叙事` | [封面](../../public/covers/g-0202.svg) |
+| 2002 | `G-0202` | [Metroid Prime](https://en.wikipedia.org/wiki/Metroid_Prime)<br>Retro Studios / Nintendo | 美国／日本 | GAMECUBE / ACTION ADVENTURE | `第一人称探索` `环境叙事` | [封面](../../public/covers/g-0202.jpg) |
 | 2003 | `G-0301` | [Prince of Persia: The Sands of Time](https://en.wikipedia.org/wiki/Prince_of_Persia:_The_Sands_of_Time)<br>Ubisoft Montreal | 加拿大 | MULTI / ACTION | `跑酷` `时间` | [封面](../../public/covers/g-0301.jpg) |
-| 2003 | `G-0302` | [Star Wars: Knights of the Old Republic](https://en.wikipedia.org/wiki/Star_Wars:_Knights_of_the_Old_Republic_(video_game))<br>BioWare / LucasArts | 加拿大／美国 | XBOX / PC RPG | `道德选择` `队友关系` | [封面](../../public/covers/g-0302.svg) |
+| 2003 | `G-0302` | [Star Wars: Knights of the Old Republic](https://en.wikipedia.org/wiki/Star_Wars:_Knights_of_the_Old_Republic_(video_game))<br>BioWare / LucasArts | 加拿大／美国 | XBOX / PC RPG | `道德选择` `队友关系` | [封面](../../public/covers/g-0302.jpg) |
 | 2004 | `G-0401` | [World of Warcraft](https://zh.wikipedia.org/wiki/%E9%AD%94%E5%85%BD%E4%B8%96%E7%95%8C)<br>Blizzard Entertainment | 美国 | PC / MMORPG | `在线世界` `社群` | [封面](../../public/covers/world-of-warcraft.jpg) |
 | 2005 | `G-0501` | [Shadow of the Colossus](https://en.wikipedia.org/wiki/Shadow_of_the_Colossus)<br>Team Ico | 日本 | PS2 / ACTION | `巨像` `极简叙事` | [封面](../../public/covers/g-0501.jpg) |
 
@@ -156,7 +156,7 @@
 | 2001 | `N-0102` | [檀香刑](https://en.wikipedia.org/wiki/Sandalwood_Death)<br>莫言 | 中国大陆 | NOVEL / HISTORICAL | `历史` `民间叙事` | [封面](../../public/covers/n-0102.jpg) |
 | 2002 | `N-0201` | [Kafka on the Shore](https://en.wikipedia.org/wiki/Kafka_on_the_Shore)<br>村上春树 | 日本 | NOVEL / MAGICAL REALISM | `超现实` `成长` | [封面](../../public/covers/n-0201.jpg) |
 | 2002 | `N-0202` | [Coraline](https://en.wikipedia.org/wiki/Coraline)<br>Neil Gaiman | 英国 | NOVELLA / DARK FANTASY | `黑暗奇幻` `儿童文学` | [封面](../../public/covers/n-0202.jpg) |
-| 2003 | `N-0301` | [The Known World](https://en.wikipedia.org/wiki/The_Known_World)<br>Edward P. Jones | 美国 | NOVEL / HISTORICAL FICTION | `历史小说` `多视角` | [封面](../../public/covers/n-0301.svg) |
+| 2003 | `N-0301` | [The Known World](https://en.wikipedia.org/wiki/The_Known_World)<br>Edward P. Jones | 美国 | NOVEL / HISTORICAL FICTION | `历史小说` `多视角` | [封面](../../public/covers/n-0301.jpg) |
 | 2003 | `N-0302` | [Purple Hibiscus](https://en.wikipedia.org/wiki/Purple_Hibiscus)<br>Chimamanda Ngozi Adichie | 尼日利亚 | NOVEL / BILDUNGSROMAN | `成长` `后殖民` | [封面](../../public/covers/n-0302.jpg) |
 | 2004 | `N-0401` | [2666](https://en.wikipedia.org/wiki/2666)<br>Roberto Bolaño | 智利／墨西哥 | NOVEL / LITERARY FICTION | `多线叙事` `历史暴力` | [封面](../../public/covers/n-0401.jpg) |
 | 2004 | `N-0402` | [Jonathan Strange & Mr Norrell](https://en.wikipedia.org/wiki/Jonathan_Strange_%26_Mr_Norrell)<br>Susanna Clarke | 英国 | NOVEL / ALTERNATE HISTORY | `奇幻` `另类历史` | [封面](../../public/covers/n-0402.jpg) |

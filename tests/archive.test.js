@@ -94,6 +94,21 @@ test('自由授权封面与资料性引用素材采用不同发布规则', () =>
   }
 })
 
+test('质量优先替换馆藏使用可识别的真实封面而非占位题签', () => {
+  const replacementCodes = new Set([
+    'M-9702', 'A-9703', 'M-0202', 'G-0202', 'N-0301',
+    'C-0502', 'G-9902', 'A-0102', 'G-0302',
+  ])
+  const replacements = archiveItems.filter(item => replacementCodes.has(item.code))
+  assert.equal(replacements.length, replacementCodes.size)
+  for (const item of replacements) {
+    assert.equal(item.cover?.status, 'referenced', `${item.code} 仍在使用占位题签`)
+    assert.equal(item.cover?.assetType, 'cover', `${item.code} 未记录为真实封面`)
+    assert.match(item.cover?.localSrc || '', /\.(?:jpe?g|png)$/i, `${item.code} 封面不是位图素材`)
+    assert.match(item.cover?.originalUrl || '', /^https:\/\/upload\.wikimedia\.org\//, `${item.code} 缺少 Wikimedia 原图地址`)
+  }
+})
+
 test('完整 Wikimedia 快照覆盖所有新增馆藏且本地文件存在', () => {
   const snapshot = JSON.parse(readFileSync('content/imports/wikimedia-collection-raw.json', 'utf8').replace(/^\uFEFF/, ''))
   assert.equal(snapshot.length, 87)
